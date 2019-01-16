@@ -23,7 +23,7 @@ void elevation_coefficient(TString conditions,
 // main
 //
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-void examen()
+void examen_2018()
 {
   printf("\n");
 
