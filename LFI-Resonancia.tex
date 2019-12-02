@@ -1,0 +1,625 @@
+\documentclass[12pt]{articulo}
+\usepackage{graphicx}
+
+\baselineskip 25pt
+\textwidth 15cm
+\textheight 23cm
+\topmargin -1.5cm
+\oddsidemargin 1cm 
+\evensidemargin 1cm 
+
+%%%\input option_keys
+%%%\input Definir(99) 
+ 
+\begin{document}
+
+\title{\bf Laboratorio de F\'isica I\\ Resonancia} 
+%%% \author{
+%%%   {\bf J.~G\"u\'emez}\\
+%%%   {\it Departamento de F\'isica Aplicada}\\ Universidad de Cantabria\\
+%%% }
+\author{
+  {\bf J.~Piedra}\\
+%%%  {\it Departamento de F\'isica Aplicada}\\
+%%%  {\bf J.~Piedra}\\
+%%%  {\it Departamento de F\'isica Moderna}\\
+  Universidad de Cantabria
+}
+\maketitle
+
+
+\section{Oscilaciones}
+
+El movimiento unidimensional de una part\'icula en un pozo de potencial es
+peri\'odico, es decir, se repite a iguales intervalos de tiempo. El intervalo de
+tiempo que tarda en volver a repetirse el movimiento se denomina per\'iodo del
+movimiento. Si $T$ es el per\'iodo del movimiento, en los ins\-tantes $t$ y
+$t+T$ la part\'icula se encuentra en la misma posici\'on y posee la misma
+velocidad. La magnitud inversa del per\'iodo es la frecuencia, o veces por
+unidad de tiempo que se repite el movimiento. La frecuencia se denota como
+$\nu$, con
+$$\nu = {1\over T}\,.$$
+
+Las funciones peri\'odicas m\'as sencillas son las trigonom\'etricas seno y
+coseno. Por tanto, el movimiento peri\'odico m\'as simple ser\'a aquel en el que
+las coordenadas del punto material var\'ien seg\'un la ley
+$$x(t) = A\,\cos \,(\omega t + \alpha)\,,$$
+donde $A$ es la amplitud del movimiento, que va a depender de las condiciones
+iniciales, $\omega$ es la frecuencia angular, en
+radianes por segundo, 
+$$\omega = 2\pi\nu = {2\pi\over T}\,,$$
+y $\alpha$ es la fase inicial, que tambi\'en depende de las condiciones iniciales.
+Para la velocidad de la part\'icula se tiene que
+$$ v(t) = {{\rm d} x(t)\over {\rm d} t}= -\omega A \sin \, (\omega t + \alpha) = \omega A \cos \, (\omega t + \alpha + {\pi/2}) \, .$$
+
+\begin{figure}[htb]
+\begin{center}
+\hspace*{0.0cm}
+\includegraphics[width=0.6\textwidth]{figuras/PENDULO-MATEMATICO.png}
+\end{center}
+\vspace*{-0.6cm}
+\caption[]{\label{fig:pendulmat}{\it P\'endulo matem\'atico}. Una bola pesada unida a una barra ligera oscila, aproximadamente, en forma arm\'onica.}
+\end{figure}
+
+La variaci\'on de la velocidad adelanta en fase a la variaci\'on de la posici\'on.
+Para la aceleraci\'on de la part\'icula se tiene
+$$ a(t) = {{\rm d} v(t)\over {\rm d} t}= -\omega^2 A \, \cos \, (\omega t + \alpha) = -\omega^2 x(t)\, .$$
+Multiplicando la aceleraci\'on por la masa, se tiene que
+$$F = m a(t) = - m \omega^2 x(t)\, .$$
+Por tanto, para que la part\'icula realice oscilaciones arm\'onicas, la fuerza que act\'ua sobre ella debe ser proporcional al desplazamiento de la part\'icu\-la y debe estar dirigida en sentido opuesto a ese desplazamiento. Este tipo de fuerza se denomina {\it fuerza recuperadora} y es caracter\'istica de los movimientos oscilatorios. La ecuaci\'on diferencial caracter\'istica de una oscilaci\'on arm\'onica es
+$${{\rm d}^2 x(t) \over {\rm d} t^2} + \omega^2 x(t) = 0\, .$$
+Para una fuerza caracter\'istica $F = - k  x (t)$ se tendr\'a que $\omega^2 = k/m$.
+Las oscilaciones de un sistema que, despu\'es de recibir un impulso inicial\footnote{Un impulso inicial incorporar\'a cierta energ\'ia al sistema.},
+se abandona a s\'i mismo, se denominan {\it oscilaciones propias}.  
+
+Para la energ\'ia potencial de la part\'icula oscilante, se tiene que
+$${{\rm d} E_{\rm P} (x) \over {\rm d} x}= - F = k x\, .$$
+La energ\'ia potencial asociada a la oscilaci\'on viene dada por
+$$E_{\rm P} (x) = {1\over 2}k x^2 \, ,$$
+donde la energ\'ia potencial es m\'inima, y la velocidad es m\'axima, para la posici\'on $x=0$. Sumando las energ\'ias potencial y cin\'etica de la part\'icula oscilante, se tiene
+$$E= {1\over 2}m v^2(t) + {1\over 2}k x^2(t) = {m A^2 \omega^2 \over 2} \left[\sin^2 \, (\omega t + \alpha) + \cos^2 \, (\omega t + \alpha)\right]= {1\over 2}{m A^2 \omega^2  }\, .$$
+%%%La energ\'ia total es proporcional al cuadrado de la amplitud. Y como la amplitud depende de las condiciones iniciales, tambi\'en depende la energ\'ia total de la perturbaci\'on inicial y de la energ\'ia por ella introducida en el sistema.
+
+En esta descripci\'on energ\'etica, y en ausencia de procesos de amortiguaci\'on, el proceso de oscilaci\'on est\'a relacionado con el paso peri\'odico de la energ\'ia potencial -- m\'axima en los extremos -- a cin\'etica -- m\'axima en el centro de la oscilaci\'on -- y viceversa.
+El valor medio, por per\'iodo de oscilaci\'on, de las energ\'ias potencial y cin\'etica 
+$${\bar K}  = {1\over T}\int_0^T {1\over 2}m v^2(t) {\rm d} t \,;\,\, {\bar E_{\rm P}}  = {1\over T}\int_0^T {1\over 2}k x^2(t) {\rm d} t \, ,$$
+es el mismo e igual cada uno de ellos a ${\bar K} = {\bar E_{\rm P}}=E/2$. 
+
+
+
+\section{Equilibrios estable e inestable}
+
+El fen\'omeno de las oscilaciones de un cuerpo alrededor de un punto siempre se produce a partir de un sistema en {\it equilibrio estable} que es perturbado, es decir, apartado de su estado de equilibrio proporcion\'andole cierta energ\'ia, de tal ma\-nera que las fuerzas que aparecen son siempre de car\'acter {\it recuperador}, intentando devolver al sistema a su estado de equilibrio.  
+
+\begin{figure}[htb]
+\begin{center}
+\hspace*{0.0cm}
+\includegraphics[width=0.6\textwidth]{figuras/EQUILIBRIO-ESTABLE.png}
+\end{center}
+\vspace*{-0.6cm}
+\caption[]{\label{fig:equilest}{\it Equilibrio estable.}}
+\end{figure}
+
+
+El sistema se encuentra en un m\'inimo de un potencial que puede aproximarse, en general, y cerca del centro,  como una par\'abola\footnote{La fuerza correspondiente se puede aproximar, en ese caso, por una l\'inea recta.}. Cuando se perturba el sistema se le proporciona energ\'ia, asciende en la par\'abola y oscila alrededor del centro, en ausencia de fricci\'on, con dos puntos extremos.
+
+En un equilibrio estable el sistema se sit\'ua en un m\'inimo de un potencial, por lo que su derivada primera en ese punto es cero. 
+Desarrollando la curva en serie de Taylor alrededor del punto de equilibrio, se tiene que para un potencial de par\'abola c\'oncava hacia arriba:
+$$E_{\rm P}(x) = +{1\over 2}\Big| {{\rm d}^2 E_{\rm P}(x)\over {\rm d}^2 x}\Big|_{x=x_{\rm e}}(x-x_{\rm e})^2 + \cdots\, .$$
+Con la segunda ley de Newton expresada como
+%%%,  $ m a = - {\rm grad} \, E_{\rm P}(x)$, expresada como:
+$$m {{\rm d}^2 x\over {\rm d} t^2} = - {{\rm d} E_{\rm P}(x)\over {\rm d} x}\, ,$$
+se tiene la ecuaci\'on diferencial del movimiento
+$$ {{\rm d}^2 (x-x_{\rm e})\over {\rm d} t^2} + \omega^2 (x-x_{\rm e}) = 0 \,;\,\, \omega^2 = m^{-1}\Big|{{\rm d}^2 E_{\rm P}(x)\over {\rm d}^2 x}\Big|_{x=x_{\rm e}}\, .$$
+Una posible soluci\'on\footnote{La funci\'on $f(x) = {\rm sin} \, x$ tiene la propiedad de que su segunda derivada es la misma funci\'on cambiada de signo $f''(x) = - f(x)$. La misma propiedad tiene la funci\'on ${\rm cos}\, x$.} de esta ecuaci\'on diferencial es de la forma
+$$(x-x_{\rm e})(t) = A\,  \sin\, (\omega t + \phi) \,;\,\, (x-x_{\rm e})(t) = A\,  \cos\, (\omega t + \phi') $$
+donde $A$ -- que depende de la energ\'ia inicial de la perturbaci\'on --  es la amplitud de la oscilaci\'on, $\omega = 2\pi/T$ es su frecuencia angular -- que depender\'a de condiciones geom\'etricas y f\'isicas --, $T$ es el per\'iodo y $\phi$ la fase inicial.\\ 
+
+\begin{figure}[htb]
+\begin{center}
+\hspace*{0.0cm}
+\includegraphics[width=0.6\textwidth]{figuras/EQUILIBRIO-INESTABLE.png}
+\end{center}
+\vspace*{-0.6cm}
+\caption[]{\label{fig:equilinest}{\it Equilibrio inestable.}}
+\end{figure}
+
+En un equilibrio inestable el sistema se sit\'ua en un m\'aximo de un potencial. Cuando el sistema se perturba las fuerzas son tales que alejan el sistema del equilibrio.
+Se tiene que para un potencial de par\'abola c\'oncava hacia abajo:
+$$E_{\rm P}(x) = -{1\over 2}\Big| {{\rm d}^2 E_{\rm P}(x)\over {\rm d}^2 x}\Big|_{x=x_{\rm e}}(x-x_{\rm e})^2 + \cdots\, .$$
+Con la Segunda Ley de Newton expresada como
+$$m {{\rm d}^2 x\over {\rm d} t^2} = - {{\rm d}  E_{\rm P}(x)\over {\rm d}  x}\, ,$$
+se tiene
+$$ {{\rm d}^2 (x-x_{\rm e})\over {\rm d} t^2} - \omega^2 (x-x_{\rm e}) = 0 \,;\,\, \omega^2 = m^{-1}\Big|{{\rm d}^2 E_{\rm P}(x)\over {\rm d}^2 x}\Big|_{x=x_{\rm e}}\, .$$
+La soluci\'on\footnote{La funci\'on $g(x) = \exp  \, x$ tiene la propiedad de que su segunda derivada es la misma funci\'on $f''(x) =  f(x)$.} de esta ecuaci\'on diferencial es:
+$$(x-x_{\rm e})(t) = A\,  \exp\, (\omega t + \phi)\, .$$
+El sistema se aleja del equilibrio una vez es perturbado.\\
+
+Un movimiento oscilatorio se puede interpretar como la proyecci\'on sobre un cierto eje de un movimiento circular con velocidad angular constante.  Con
+$$x(t) = A \cos\, \left(\omega t   + \phi\right) \, ; y(t) = A \sin\, \left(\omega t \right)\, ,$$
+si este movimiento se proyecta sobre el eje X o el eje Y, se tendra un movimiento oscilatorio.
+
+
+%Con la ayuda de un carril de Galileo se pueden ilustrar los conceptos de equilibrio estable, bola en el mínimo, inestable,
+%bola en el máximo e indiferente bola en un plano.  (Se utiliza el carril del fusil de Gauss).
+%
+%Cuando se da una situación en la que la suma de las fuerzas $F_k$ aplicadas sobre un cuerpo es nula $\sum_k F_k = 0$, 
+%hay que recurrir a pertubar el sistema para ver si se encuentra en situación de equilibrio estable o inestable.
+%
+%Utilizar el Buzo de Descartes,  grande o pequeño, para ilustrar el concepto de equilibrio estable (tubos flotantes) y equilibrio inestable (tubo intermedio).
+
+\section{Demostraciones}
+
+\subsection{P\'endulos}
+
+Los diversos tipos de p\'endulos son paradigmas de sistemas oscilantes.
+
+\begin{enumerate}
+
+\item {\bf P\'endulo matem\'atico.} Por ejemplo, una bola de plomo colgada de un hilo de  pescar. 
+La ecuaci\'on para un p\'endulo matem\'atico (aproximaci\'on de \'angulo peque\~no, $\sin\theta \approx \theta$)
+viene dada por
+$$\theta (t) = \theta_0\,  \sin\, (\omega t + \phi)\, .$$
+Si a tiempo $t=0$ el p\'endulo se encuentra en el \'angulo $\theta = \theta_i$ y 
+se mueve con velocidad angular $\omega_i$, se tienen las ecuaciones:
+\begin{eqnarray}
+\theta_i &=& \theta_0\,  \sin\,  \phi \, ,\nonumber\\
+\omega_i &=& \theta_0 \, \omega\,  \cos\, \phi \, .\nonumber
+\end{eqnarray}
+Con estas ecuaciones se calculan $\theta_0$ y $\phi$.
+
+Per\'iodo de un p\'endulo matem\'atico:
+$$T = 2 \pi \sqrt{l\over g}\, .$$
+%\item Demostrar que dos p\'endulos de igual longitud pero con diferentes masas puntuales tienen (aproximadamente) el mismo per\'iodo.
+
+\item {\bf P\'endulo de gravedad variable.} Calcular y medir el per\'iodo de un p\'endulo de gravedad variable:
+$$T(\alpha) = 2\pi\sqrt{l \over g\cos\alpha}\,.$$
+Cuando $\alpha = 1,31$ rad ($75^\circ$), $\cos\alpha = 0,25$ y el per\'iodo debe ser el doble que cuando el p\'endulo se encuentra en vertical.
+
+\item {\bf P\'endulo f\'isico.}  Per\'iodo de un p\'endulo f\'isico en forma de barra
+(momento de inercia respecto de un eje perpendicular que pasa por su centro, $I_0 = {1\over 12}mL^2$, y momento de inercia respecto de un eje perpendicular que pasa por uno de sus extremos, $I'= m L^2/3$):
+$$T = 2\pi \sqrt{I \over mg d} = 2\pi \sqrt{m L^2/3 \over mg (L/2)} = 2\pi \sqrt{2L \over 3g}\, ,$$
+donde $I$ es el momento de inercia respecto al punto de apoyo o suspensi\'on, y $d$ es la distancia del punto de suspensi\'on al centro de masas.
+%%%(Demostrar que esta ecuaci\'on para $T$ es dimensionalmente correcta).
+Tiene un per\'iodo menor que el de un p\'endulo matem\'atico de la misma longitud.
+
+\begin{figure}[htb]
+\begin{center}
+\hspace*{0.0cm}
+\includegraphics[width=0.6\textwidth]{figuras/OSCILAR-ANILLO-ALGODOO-BIS.png}
+\end{center}
+\vspace*{-0.6cm}
+\caption[]{\label{fig:anillooscila}{(Izquierda) Anillo que oscila sobre un soporte colocado
+    en su parte superior interna. (Derecha) Disco con el mismo radio que el anillo.}}
+\end{figure}
+
+
+
+{\bf Oscilaciones de un anillo.}
+Un anillo oscila con un per\'iodo $T$ dado por
+$$T = 2 \pi \sqrt{I \over m g d}\, ,$$
+donde
+$I= I_0 + m R^2 = 2 m R^2$ y $d = R$. Se tiene
+$$T_{\rm anillo} = 2 \pi \sqrt{2R \over g}\, .$$
+Un anillo de radio $R$ oscila con el mismo per\'iodo que un p\'endulo matem\'atico de longitud su di\'ametro, $L=2R$.
+
+{\bf Oscilaciones de un disco.}
+Para un disco, $I=I_0 + m R^2 = {3\over 2} m R^2$ y $d= R$.
+$$T_{\rm disco} = 2 \pi \sqrt{3R/2 \over g}\, .$$
+Su per\'iodo es menor, es decir, oscila m\'as rapidamente, que el de un anillo con el mismo radio.
+
+%Péndulo PASCO --barra más dos pesas-- conectado a un ordenador:
+%con las dos masas colocadas al extremo de la barra de 34~cm, se comporta como un péndulo matemático, de período 1,2~s.  Debe haber 12~s en 10 períodos medidos en la pantalla. Con únicamente la barra, se comporta como péndulo físico, con período de 1~s aproximadamente. 
+%Debe haber 10~s para 10 períodos.
+
+\newpage
+
+%%% \item {\bf El tentetieso como un p\'endulo f\'isico.}
+%%% 
+%%% %Se comienza describiendo un tentetieso tipo payaso, en el que se vea bien que la estabilidad se consigue haciendo que el
+%%% %centro de gravedad se sitúe por debajo del punto de apoyo. Se compara entonces este tentetieso y esta condición de equilibrio estable 
+%%% %con el tentetieso de bola, en el que el centro de masas siempre se encuentra por encima del punto de apoyo, lo que contradice la condición
+%%% %anterior. Lo que se observa es que la condición de equilibrio estable en tentetiesos es que siempre que  el equilibrio se perturbe el centro de gravedad
+%%% %ascienda, con lo que tienda a descender. Si en el proceso el centro de gravedad desciende, entonces seguirá descendiendo y el equilibrio ya no será estable. 
+%%% 
+%%% Estudiar los per\'iodos de los dos modos normales del tentetieso \'aguila. Para la primera oscilaci\'on, la distancia al eje de giro es de unos $l_1=6,5$~cm. La distancia entre el punto de apoyo y el centro de gravedad se estima en $d=1$~cm. Para la oscilaci\'on m\'as r\'apida, la distancia al eje se estima en unos $l_2=2,5$~cm.
+%%% Con estos datos
+%%% $$T_1 = 2 \pi \sqrt{ml_1^2\over m g d} \approx 1,3~{\rm s}\, .$$
+%%% Para 10 per\'iodos se esperan unos 13~s.
+%%% Para la oscilaci\'on r\'apida, 
+%%% $$T_2 = 2 \pi \sqrt{ml_2^2\over m g d} \approx 0,5~{\rm s}\, .$$
+
+
+\begin{figure}[htb]
+\begin{center}
+\hspace*{0.0cm}
+\includegraphics[width=0.9\textwidth]{figuras/PENDULO-TORSION.png}
+\end{center}
+\vspace*{-0.6cm}
+\caption[]{\label{fig:pentorsi}{\it P\'endulo de torsi\'on.}}
+\end{figure}
+
+\item {\bf P\'endulo de torsi\'on.} Para un p\'endulo de torsi\'on --un muelle unido a una plataforma--, el \'angulo es proporcional al torque aplicado.
+$$T = 2\pi\sqrt{I \over k_{\rm T}}\,,$$
+donde $k_{\rm T}$ es el coeficiente de torsi\'on.
+
+
+\item {\bf Tubo oscilante en fluido.} Tubo lastrado con plomos que oscila en cubeta con agua. Oscilaciones amortiguadas.
+$$T = 2 \pi \sqrt{m \over A \rho g}\,,$$
+donde $A$ es la secci\'on del tubo, $\rho$ es la densidad del l\'iquido, y $m$ es la masa del conjunto tubo m\'as plomos.
+Puesto que el peso del tubo debe ser igual al peso del agua desalojada,
+$m g = h_{\mathrm s} A \rho g$, donde $h_{\mathrm s}$ es la longitud de tubo sumergido. Sustituyendo se obtiene que:
+$$T = 2 \pi \sqrt{h_{\mathrm s} \over  g}\, ,$$
+que vuelve a tener la forma del per\'iodo para un p\'endulo matem\'atico.
+
+\end{enumerate}
+
+
+%\section{Oscilando en una circunferencia}
+%
+%\begin{figure}[htb]
+%\begin{center}
+%\hspace*{0.0cm}
+%\includegraphics[width=11.5cm]{BLOQUE-EN-CIRCUMF-OSCILAC.pdf}
+%\end{center}
+%\vspace*{-0.6cm}
+%\caption[]{\label{fig:bloosccircun} {\it Bloque oscila en circunferencia.} (a)   (b) .}
+%\end{figure}
+%
+%En la Fig.~\ref{fig:bloosccircun}  se muestra un esquema de un proceso en el que un bloque oscila, sin rozamiento,  en el interior de una circunferencia de radio $R$. 
+%
+%En un instante dado, cuando el bloque forma un ángulo $\theta$ con la vertical, se encuentra a una altura
+%$h(\theta)$ sobre el punto más bajo de la circunferencia de
+%$$h (\theta) = R\left(1 - \cos\, \theta\right)\, .$$
+%Su energía potencial gravitatoria $U(\theta)$ es entonces
+%$$U (\theta) = M g R\left(1 - \cos\, \theta\right)\, .$$
+%Su energía cinética en esa posición es 
+%$$K = {1\over 2} M v^2 = {1\over 2} M R^2 \left({{\rm d} \theta \over {\rm d} t}\right)^2\, .$$
+%Puesto que  la energía mecánica se conserva
+%$$M g R\left(1 - \cos\, \theta\right) + {1\over 2} M R^2 \left({{\rm d} \theta \over {\rm d} t}\right)^2 = E_0\, .$$
+%Un instante después, el ángulo debe cambiar, pero el bloque   debe mantener constante la energía total. 
+%Derivando toda la expresión anterior de la energía respecto del tiempo
+%$${{\rm d} \over {\rm d} t}\left[M g R\left(1 - \cos\, \theta\right) + {1\over 2} M R^2 \left({{\rm d} \theta \over {\rm d} t}\right)^2\right] = 0\, .$$
+%Se obtiene entonces que
+%$$M g R \sen\, \theta {{\rm d} \theta\over {\rm d} t}+ {1\over 2} M R^2 2 \left({{\rm d} \theta \over {\rm d} t}\right) {{\rm d}^2 \theta \over {\rm d} t^2}=0\, .$$
+%$${{\rm d}^2 \theta \over {\rm d} t^2} + g R \sen\, \theta  = 0\, .$$
+%Para ángulos pequeños, $\sen\, \theta  \approx \theta$ y
+%$${{\rm d}^2 \theta \over {\rm d} t^2} + {g\over  R}  \theta  = 0\, .$$
+%Con $\omega^2 = {g \over R}$, el período de oscilación es
+%$$T = 2\pi \sqrt{R\over g}\, .$$
+%El bloque oscila como lo haría un péndulo matemático de longitud el radio $R$ de la circunferencia. 
+%
+%Si en vez de un bloque oscilando en la circunferencia se tiene una esfera (o anillo o disco) oscilando en la circunferencia, se puede anticipar que su período de oscilación será mayor (es decir, tardará más que el bloque en recorrer la circunferencia), debido a que parte de la energía  potencial gravitatoria que se le da inicialmente al separarlo del punto inferior de la circunferencia, se debe emplear en hacer girar la esfera, por lo que queda menos energía para trasladar el centro de masas.
+%
+%\begin{figure}[htb]
+%\begin{center}
+%\hspace*{0.0cm}
+%\includegraphics[width=11.5cm]{ESFERA-EN-CIRCUMF-OSCILAC.pdf}
+%\end{center}
+%\vspace*{-0.6cm}
+%\caption[]{\label{fig:esfosccircun} {\it Esfera que  oscila en un arco de circunferencia.}.}
+%\end{figure}
+%
+%En la Fig.~\ref{fig:esfosccircun}  se muestra un esquema de un proceso en el que una esfera (se puede sustituir por un disco o un anillo), de radio $r$, oscila en el interior de una circunferencia de radio $R$, sin deslizar, cumpliendo la condición de rodadura. 
+%
+%En un instante dado, cuando la esfera forma un ángulo $\theta$ con la vertical, se encuentra a una altura
+%$$h (\theta) = R  - (R-r)\cos\, \theta\, .$$
+%Su energía potencial gravitatoria es 
+%$$U (\theta)= M g R - M g (R-r) \cos\, \theta\, .$$
+%Para pequeñas oscilaciones se aproxima $\cos \theta \approx 1 - {\theta^2\over 2}$, y
+%$$U (\theta) \approx  M g R - M g (R-r) \left(1-{\theta^2\over 2}\right)\, .$$
+%
+%Su energía cinética de traslación del centro de masas $K$ es 
+%$$K = {1\over 2} M v_{\rm cm}^2 = {1\over 2} M R^2 \left({{\rm d} \theta \over {\rm d} t}\right)^2\, ,$$
+%de acuerdo con la condición de rodadura
+%y su energía cinética de rotación $K_{\rm R}$ es
+%$$K_{\rm R} = {1\over 2} I \omega^2\, ,$$
+%donde
+%$$v_{\rm cm} = (R-r) {{\rm d} \theta \over {\rm d} t}\, ,$$
+%y
+%$$\omega = {R-r\over r}{{\rm d} \theta\over {\rm d} t}\, .$$
+%%Para que la esfera no deslice, el ángulo recorrido por el radio vector debe ser el mismo que gira la esfera, ${\rm d} \theta = \omega {\rm d} t$
+%Para la energía cinética total
+%$$T = {1\over 2}M (R-r)^2 \left({{\rm d} \theta\over {\rm d} t}\right)^2 + {1\over 2}{2\over 5}Mr^2{(R-r)^2\over r^2}
+%\left({{\rm d} \theta\over {\rm d} t}\right)^2\, .$$
+%
+%Puesto que  la energía mecánica se conserva
+%$$M g (R-r)\left(1 - {\theta^2\over 2}\right) + {7\over 10} M (R-r)^2 \left({{\rm d} \theta\over {\rm d} t}\right)^2 = E_0\, .$$
+%Un instante después, el ángulo debe cambiar, pero se debe mantener constante la energía. 
+%Derivando toda la expresión respecto del tiempo
+%$${{\rm d} \over {\rm d} t}\left[M g (R-r)\left(1 - {\theta^2\over 2}\right) + {7\over 10} M (R-r)^2 \left({{\rm d} \theta\over {\rm d} t}\right)^2\right] = 0\, .$$
+%Se obtiene entonces que
+%$$M g (R-r)   \theta {{\rm d} \theta\over {\rm d} t}+ {7\over 10} M (R-r)^2 2 \left({{\rm d} \theta \over {\rm d} t}\right) {{\rm d}^2 \theta \over {\rm d} t^2}=0\, .$$
+%$${{\rm d}^2 \theta \over {\rm d} t^2} + {5\over 7}{g\over R-r}   \theta  = 0\, .$$
+%Con $\omega^2 = {5\over 7}{g\over R-r}$, el período de oscilación es
+%$$T = 2\pi \sqrt{7(R-r)\over 5g}\, .$$
+%La esfera debe dedicar energía a la rotación por lo que tarda más tiempo en recorrer la misma distancia que el bloque, y su período de oscilación es mayor.
+
+\section{Ley de Hooke}
+
+\begin{enumerate}
+\item {\bf P\'endulo de resorte.} Con muelles verticales. Se mide la constante el\'astica de un muelle con la ayuda de un dinam\'ometro y de una regla.
+Se mide la longitud del muelle en ausencia de fuerzas, y con la ayuda del dinam\'ometro y la regla se obtienen fuerza y elongaci\'on,
+y de ah\'i la constante $k$ del muelle. Esta constante se utiliza luego en diferentes experimentos. Si se coloca un peso $mg$, y se hace oscilar,
+el per\'iodo de oscilaci\'on viene dado por
+$$T = 2 \pi \sqrt{m\over k}\, .$$
+
+
+El fabricante de los muelles proporciona los valores de $k_{\mathrm R}= 10$~N~m$^{-1}$
+para el muelle rojo, $k_{\mathrm A}= 20$~N~m$^{-1}$ para el muelle azul, y $k_{\mathrm V}= 40$~N~m$^{-1}$
+para el muelle verde.  Puesto que el soporte tiene $h=0,5$~m de altura y la pesa tiene $m=$~1kg, se debe utilizar el muelle verde.
+Con los datos proporcionados el per\'iodo de oscilaci\'on es de $T=1$~s. Se esperan 10~s para la medida de 10 per\'iodos.
+
+\begin{figure}[htb]
+\begin{center}
+\hspace*{0.0cm}
+\includegraphics[width=0.6\textwidth]{figuras/DOS-BOLAS-MUELLE-NO-AMORTIG.png}
+\end{center}
+\vspace*{-0.6cm}
+\caption[]{\label{fig:dsblmllnmrt}{\it Dos bolas que oscilan en los extremos de un muelle.} Cada bola ejecuta un movimiento arm\'onico simple no amortiguado.}
+\end{figure}
+
+%\item {\bf Combinaciones de muelles.} Muelles de distinta constante elástica, $k_i$ se pueden combinar, en serie, uno detrás de otro, o en paralelo. En el equilibrio después de colgar una masa $m$ del extremo libre de los muelles
+%
+%$$ m g = k_i {\rm d}elta x_i\, ; {\rm d}elta x_i = {mg \over k_i}\, ,$$
+%pues cada muelle se estira bajo el mismo peso.  Con 
+%$$  m g = k_{\rm eq} {\rm d}elta x = k_{\rm eq} m g \left(\sum_i {1\over k_i}\right)\, ,$$
+%se tiene que
+%$$ k_{\rm eq}   =   \left(\sum_i {1\over k_i}\right)^{-1}\, .$$
+% 
+%
+%Para los resortes en serie se tiene que la constante elástica equivalente es
+%$${1\over k_{\rm eq} } = \sum_i {1\over k_i}\, .$$
+%El muelle más blando, con menor valor de $k_i$ es el que determina el período de oscilación. 
+%
+%Para resortes en paralelo
+%(que se elongan la misma distancia), 
+%$$ m g = \left(\sum_i k_i\right) {\rm d}elta x\, ,$$
+%y es
+%$${  k}_{\rm eq} = \sum_i {  k_i}\, .$$
+%El resorte más rígido, con mayor valor de $k_i$ es el que determina el período de oscilación
+
+\item {\bf Dos muelles horizontales en carril sin rozamiento.}  El per\'iodo de oscilaci\'on del carrito es de
+$$T = 2 \pi \sqrt{m\over 2k}\, .$$ 
+La constante del muelle se estima considerando una longitud en reposo de $l_0 = 5,5$~cm, y que se estira hasta los $l=34,5$~cm bajo la acci\'on de una fuerza de 2~N, medida con un dinam\'ometro de 2~N. Se tiene entonces $k \approx 7$~N~m$^{-1}$. Con este dato, para un carrito de $m=500$~g se espera un per\'iodo de oscilaci\'on de $T=1,2$~s y un tiempo de unos 6~s para 5 oscilaciones.
+
+
+%\item {\it Resonancia.}  Si el carrito con los dos muelles se fuerza con una fuerza sinusoidal, si la frecuencia de la fuerza es la del carrito, entonces entra en resonancia. 
+%
+%Se puede amortiguar con un imán de neodimio, utilizando la Ley de Lenz. 
+%$$\omega^2 = \omega_0^2 - {\beta^2\over 4}\, .$$
+%La amplitud
+%$$A(t) = A_0 \exp \left(-\beta t\right)\, ,$$
+%decrece con el tiempo.
+
+\end{enumerate}
+
+\begin{figure}[htb]
+\begin{center}
+\hspace*{0.0cm}
+\includegraphics[width=0.6\textwidth]{figuras/OSCILACIONES-AMORTIGUADAS.png}
+\end{center}
+\vspace*{-0.6cm}
+\caption[]{\label{fig:oscilamortig}{\it Oscilaciones amortiguadas.} Dos bolas
+  colocadas en los extremos de un resorte oscilan de forma amortiguada. Toda la
+  energ\'ia el\'astica inicial del resorte se disipa.}
+\end{figure}
+
+
+\section{Oscilaciones amortiguadas}
+\label{sec:oscil}
+
+En presencia de una fuerza de rozamiento, t\'ipicamente proporcional a la velocidad,  $F_{\rm r}= - b v$, sobre un sistema oscilante, se tiene la segunda ley de Newton
+$$- k x - b {{\rm d} x \over {\rm d} t} = m {{\rm d}^2 x \over {\rm d} t^2}\, ,$$
+donde $b$ es una constante de amortiguaci\'on.  Integrando esta ecuaci\'on diferencial, se tiene
+$$x(t) = A \exp \left(-{b\over 2m} t\right) \cos (\omega t + \phi)\, ,$$
+donde 
+$$\omega = \left[\omega_0^2 - \left({b\over 2m}\right)^2\right]^{1/2}\, ; \omega_0 = \sqrt{k\over m}\, ,$$
+con $\omega_0$ la frecuencia angular del sistema oscilante sin rozamiento, o frecuencia natural del sistema.
+La p\'erdida de energ\'ia del cuerpo que oscila ser\'a igual a la energ\'ia disipada por rozamiento
+$${{\rm d} E}= F_{\rm r} {\rm d} x = - b v^2 {\rm d} t\, ,$$
+de donde
+$${{\rm d} E \over {\rm d} t}=   - b v^2 = - {2b\over m}{mv^2\over 2}\, .$$
+Si la fuerza de rozamiento es peque\~na, se puede aplicar que para un cuerpo que oscila la energ\'ia cin\'etica promedio y la energ\'ia el\'astica promedio son iguales e iguales a la mitad de la energ\'ia total. Por tanto, se puede poner que
+$${{\rm d} E \over {\rm d} t}=   - 2 \gamma  E\, ,$$
+donde $\gamma = b/2m$. Escribiendo ${\rm d} \ln E = - 2 \gamma {\rm d} t$, se tiene que
+$$E= E_0 \exp (-2\gamma t)\, ,$$
+donde $E_0$ es la energ\'ia inicial del sistema y $E$ la energ\'ia mec\'anica disponible en el tiempo $t$. 
+Para $t\rightarrow \infty$ toda la energ\'ia mec\'anica se disipa, t\'ipicamente, en forma de calor, y el cuerpo deja de oscilar.
+%La energ\'ia mec\'anica inicial se disipa por trabajo disipativo o calor.
+%%%Como la energ\'ia de un sistema oscilante es proporcional al cuadrado de la amplitud, se tiene que
+%%%$$A = A_0 \exp (- \gamma t)\, .$$
+Puesto que
+$$\gamma  = - {1\over T}\ln {x([n+1]T)\over x([nT])}\, ,$$
+$\gamma$ se relaciona con el intervalo de tiempo
+%%%$\tau = \gamma^{-1}$
+en el que la amplitud de la oscilaci\'on se ve dividida por $e$, o que la energ\'ia total del sistema 
+se ve dividida por $e^2$. Como tambi\'en se tiene que
+$$\omega^2 = \omega_0^2 - \gamma^2\,,$$
+si $\gamma^2 \ll \omega_0^2$, el sistema perder\'a energ\'ia lentamente y se podr\'ia considerar la oscilaci\'on como no amortiguada, con $\omega \approx \omega_0$.\\
+
+{\bf Principio del m\'inimo de la energ\'ia potencial.}
+En aquellos fen\'omenos oscilantes en los que intervienen fuerzas de rozamiento, el sistema alcanza una posici\'on de equilibrio estable y ausencia de movimiento.
+Si a lo largo de la oscilaci\'on se producen efectos de {\it rozamiento}, se disipa energ\'ia mec\'anica, la oscilaci\'on se amortigua y el sistema vuelve a su posici\'on de equilibrio estable, alcanzando el m\'inimo del potencial. 
+Este comportamiento se conoce como Principio del m\'inimo de la energ\'ia potencial\footnote{En presencia de fuerzas de fricci\'on, que act\'uan eliminando energ\'ia cin\'etica, se disipa toda la energ\'ia mec\'anica posible, transfiriendo calor al entorno, que alcanza el m\'aximo de entrop\'ia compatible con las condiciones del problema. Es decir, el Principio del m\'inimo de la energ\'ia potencial es el Principio de m\'axima entrop\'ia.}: el sistema alcanzar\'a el m\'inimo de la energ\'ia potencial compatible con las condiciones del problema. Por ejemplo, sea un muelle del que cuelga una masa $m$. Si en la situaci\'on inicial de altura $h=0$ y longitud del muelle $L_0$ se deja libre el sistema, se produce una oscilaci\'on. Cuando la masa desciende una altura $h$, tiene una energ\'ia potencial $E_{\rm P}(h) = - m g h$, mientras que el muelle acumula energ\'ia potencial el\'astica como $E_{\rm P}(h) = k h^2/2$. La energ\'ia potencial total es 
+$$E_{\rm P} = {1\over 2} k h^2 - m g h\, .$$
+La condici\'on de equilibrio se obtiene imponiendo que:
+$${{\rm d} E_{\rm P}(h)\over {\rm d} h} = 0\, ,$$
+de donde se obtiene que la longitud de equilibrio $L_{\rm e}$ es tal que
+$$L_{\rm e} = L_0 + {m g \over k}\, ; h_{\rm e} = L_{\rm e} - L_0\, .$$
+En este equilibrio la energ\'ia potencial total es:
+$$E_{\rm P}(L_{\rm e}) = -{1\over 2} {m^2 g^2\over k}\, .$$
+La energ\'ia potencial inicial disminuye, al principio convertida en energ\'ia cin\'etica, hasta que parte de la energ\'ia mec\'anica se disipa en forma de calor.
+De acuerdo con el primer principio de la termodin\'amica, la energ\'ia mec\'anica disipada se intercambia, con el foco t\'ermico que rodea el sistema,  como calor. De acuerdo con el segundo principio de la termodin\'amica, esta energ\'ia intercambiada da lugar a un aumento de la entrop\'ia del universo, $\Delta S_{\rm U}>0$, lo que indica que el proceso disipativo es irreversible.
+
+
+En la situaci\'on ideal de completa ausencia de rozamiento, el sistema oscilar\'ia indefinidamente. 
+
+
+\section{Resonancia}
+\label{sec:resonan}
+
+Todos los sistemas que oscilan pueden experimentar el fen\'omeno de la resonancia.  
+%Si el sistema oscilante, con una frecuencia natural $\omega_0$ es perturbado desde el esterior por un sistema que ejerce una fuerza también oscilante y con la frecuencia $\omega_0$, la fuerza externa aumentará en cada período la energía del sistema, que variará su amplitud y que, en ausencia de rozamiento, puede llegar a tener una amplitud tan grande que se destruya.
+En presencia de una fuerza forzante aplicada con frecuencia angular ${\tilde \omega}$, sobre el sistema, y en ausencia de rozamiento, se tiene la segunda ley de Newton
+$$F_0 \sin {\tilde \omega} t - k x  = m {{\rm d}^2 x \over {\rm d} t^2}\, .$$
+Las soluciones de esta ecuaci\'on vienen dadas por
+$$x(t) = A \cos ({\tilde \omega} t + \phi)\, ,$$
+con la amplitud $A$ del estado estacionario dada por
+$$A = {F_0/m \over {{\tilde \omega}}^2 - \omega_0^2}\, .$$
+La fuerza forzante termina por imponer, despu\'es de un transitorio, su frecuencia ${\tilde \omega}$ al sistema. Cuanto m\'as pr\'oxima a la frecuencia natural $\omega_0$ sea la frecuencia forzante ${\tilde \omega}$, mayor ser\'a la amplitud, y la energ\'ia, de la oscilaci\'on. Para ${\tilde \omega} = \omega_0$ el sistema entra en resonancia y absorbe toda la energ\'ia que le da la fuerza forzante, destruy\'endose (experimento de la copa de vidrio).
+
+Si la fuerza forzante se aplica sobre el sistema en presencia de fricci\'on, se tiene la ecuaci\'on diferencial
+para la segunda ley de Newton
+$$F_0 \sin {\tilde \omega} t - k x  - b {{\rm d} x \over {\rm d} t} = m {{\rm d}^2 x \over {\rm d} t^2}\, .$$
+Las soluciones de esta ecuaci\'on vienen dadas por
+$$x(t) = A \cos ({\tilde \omega} t + \phi)\, ,$$
+con la amplitud $A$ del estado estacionario dada por
+$$A = {F_0/m \over \sqrt{\left({{\tilde \omega}}^2 - \omega_0^2\right)^2 + 4{\tilde \omega}^2\gamma^2}}\, .$$
+La fuerza forzante termina por imponer su frecuencia al sistema, pero, incluso para ${\tilde \omega} = \omega_0$, termina por alcanzarse una amplitud tal que la energ\'ia que cede la fuerza forzante al sistema se disipa por rozamiento (trabajo disipativo o calor) al exterior.\\ 
+
+{\bf P\'endulos resonantes d\'ebilmente acoplados.} Tres p\'endulos matem\'aticos cuelgan de la misma barra. Dos tienen la misma longitud y el tercero no. Cuando oscila  uno de los del par, ambos terminan por oscilar.\\
+
+%%% {\bf P\'endulo de Wilberforce.} P\'endulo de muelle y p\'endulo de torsi\'on. Acoplamiento entre los modos de oscilaci\'on y los modos de torsi\'on.\\
+
+{\bf Resonancia en carrito con dos muelles.}  Si el carrito con los dos muelles se fuerza con una fuerza sinusoidal, si la frecuencia de la fuerza es la del carrito, entonces entra en resonancia, de tal forma que si no se interrumpe la fuerza externa, el sistema se destruye. El movimiento oscilatorio del carrito forzado se puede amortiguar con un im\'an de neodimio, utilizando la Ley de Lenz. 
+
+
+%\section{Ondas estacionarias transversales}
+%
+%Un fenómeno de auto-interferencias serían las ondas estacionarias.
+%
+%La cuerda [longitud $L=3$~m, peso, $F=1,3$~N] tiene una densidad de $\rho_\rL = 5\ttimes 10^{-3}$~kg~m$^{-1}$, y se le aplica una fuerza de $F=2$~N (Esta fuerza puede cambiar). La velocidad de propagación de las ondas es entonces:
+%$$v = \left({F\over \rho_\rL}\right)^{1/2} \approx 20~{\rm m\,  s^{-1}}\, .$$
+%Demostrar que la ecuación es dimensionalmente correcta.
+%Para una distancia $L=1,2$~m, la frecuencia del primer armónico se espera que se encuentre en
+%$$\nu_1 = {v \over 2 L} \approx 8~{\rm Hz}\, .$$
+%Los siguientes armónicos se encuentran a múltiplos de esta frecuencia.
+%
+%
+%
+%
+%\section{Ondas estacionarias longitudinales}
+%
+%
+%
+%\subsection{Ondas en muelles}
+%
+%La velocidad de propagación de las ondas longitudinales en un muelle es:
+%$$v=\left({B\over \rho_\rL}\right)^{1/2}\, .$$
+%El coeficiciente $B$ es
+%$$B = L \left({\partial F\over \partial L}\right)_T\, ,$$
+%o variación relativa de la longitud del muelle bajo tensión (inverso). Tanto la densidad lineal como $B$ se deben medir para el muelle extendido
+%(se pesa el muelle y se divide por la longitud estirado; se estira unos 10~cm y se mide la fuerza necesaria).
+%
+%%Para una longitud de 1~m, 
+%
+%La longitud del muelle es la mitad de la longitud de onda del primer armónico. $L=\lambda/2$. Con $v = \nu \lambda$, 
+%
+%$$\nu = {v\over 2L}\, .$$
+%
+%Para el muelle, se tiene una frecuencia del primer armónico de 3~Hz.  A 6~Hz se ve bastante bien el primer nodo central y a 9~Hz se ve bastante bien los dos nodos intermedios.
+
+\subsection{Ondas sonoras}
+
+La velocidad de propagaci\'on del sonido en el seno de un cuerpo viene dada por
+$$v_{\mathrm S}=\sqrt{K\over \rho}\,,$$
+donde se tiene el coeficiente
+$$K = -V \left({\partial P\over \partial V}\right)_S\,,$$
+relacionado con el coeficiente de compresibilidad adiab\'atica.
+En condiciones adiab\'aticas para un gas ideal $PV^\gamma = {\rm constante}$, con $\gamma = 1,4$.
+$$v_{\rm S} = \sqrt{\gamma P\over \rho}\,.$$
+Densidad del aire $\rho = 1,25$~kg~m$^{-3}$, $P = 1,013\cdot 10^5$~Pa, 
+$$v_{\rm S} = \sqrt{\gamma P\over \rho} \approx 340~{\rm m s^{-1}}\, .$$
+
+Si en la laringe, longitud de unos $L=15$~cm, se forma una onda estacionaria de longitud de onda $\lambda \approx 4L$, entonces la frecuencia es
+$$\nu = {v_{\rm S} \over \lambda} \approx {340\over 0,6} \approx 600~{\rm Hz}\, .$$
+La voz humana se encuentra entre los 80 y los 1100~Hz.\\
+
+{\bf Experimento con helio.} Cuando se toma algo de helio, es decir, cuando el
+aire de la garganta se sustituye por helio, la cavidad resonante, la laringe,
+sigue teniendo las mismas dimensiones, por lo que la longitud de onda de las ondas
+estacionarias que se forman en dicha cavidad es la misma que con el aire. Se
+modifica la velocidad de propagaci\'on de la onda, y por tanto su frecuencia,
+pues cambian la densidad y $\gamma$. Para el aire, con $M \approx 30$~g mol$^{-1}$,
+y para el helio, con $M ({\rm He}) \approx 4$~g mol$^{-1}$, la raz\'on de sus
+densidades es de $1/8$, por lo que la relaci\'on de las velocidades de
+propagaci\'on es unas 3 veces mayor en el helio que en el aire.
+Puesto que ahora $\lambda \nu ({\rm He}) \approx 3 v_{\mathrm s}$, la frecuencia
+$\nu ({\rm He}) \approx 3 \nu$, y el sonido emitido ser\'a m\'as agudo
+que con aire.
+
+%%% J.Piedra %%% {\bf Resonancia en diapasones.} Resonancia ac\'ustica. Dos diapasones, con sus
+%%% J.Piedra %%% correspondientes cajas de resonancia, entran en resonancia, a trav\'es de las
+%%% J.Piedra %%% ondas sonoras producidas en una caja y enviadas a la otra, cuando su frecuencia
+%%% J.Piedra %%% de vibraci\'on es la misma. Una diferencia de 1 Hz en sus frecuencias de
+%%% J.Piedra %%% vibraci\'on y ya no resuenan.\\ 
+%%% J.Piedra %%% 
+%%% J.Piedra %%% {\bf Barra cantante}. Si se utiliza una barra de aluminio, de longitud
+%%% J.Piedra %%% $L\approx 50$~cm, para producir ondas sonoras estacionarias, se tiene que si se
+%%% J.Piedra %%% toma por el medio con un dedo, la longitud de onda de la onda estacionaria es
+%%% J.Piedra %%% $\lambda = 2L$. El sonido se transmite en el aluminio con una velocidad de
+%%% J.Piedra %%% $v_{\mathrm s} \approx 5100$~m s$^{-1}$, por lo que se obtienen frecuencias
+%%% J.Piedra %%% de 5000~Hz.
+
+%\section{Cubeta de ondas}
+%
+%Producción de ondas.  Mediante una lámina oscilante se producen las perturbaciones en la superficie del agua. 
+%
+%Propagación de ondas. Las ondas se propagan como ondas transversales bidimensionales. 
+%
+%Fenómenos de interferencia. Se producen dos perturbaciones de la misma frecuencia en la superficie del agua. Aquellos puntos a los que llegan dos ondas en fase
+%positiva tienen más altura de agua y una curvatura negativa. Al llegar la luz procedente de arriba, se concentra y el punto se observa como brillante. 
+%Aquellos puntos a los que llegan dos ondas en fase negativa
+%tienen menos altura de agua y una curvatura positiva. Al llegar la luz procedente de arriba, se dispersa y el punto se observa como oscuro. Aquellos puntos a los que llegan dos ondas en anti-fase
+%tienen la misma altura de agua y son planas. Al llegar la luz procedente de arriba, no se concentra y el punto se observa como intermedio.
+%
+%
+%
+%\section{Ondas luminosas}
+%
+%Interferencias. Se pueden producir haciendo incidir un rayo láser sobre un espejo, lanzando gotitas de alcohol para visualizar la trayectoria del rayo
+%y viendo que las gotitas depositadas sobre el espejo producen fenómenos de interferencia. 
+% 
+% Interferencias. 
+% 
+% Una rendija. Cuando un rayo de luz atraviesa una rendija, se produce un patrón de interferencias. Justo detrás de la rendija hay un punto de luz, pero a sus lados hay oscuridad, seguida de puntos más débiles de luz, oscuridad, etc. 
+% 
+% Doble rendija. Cuando un rayo de luz atraviesa una doble rendija, en la mancha luminosa que se observaba en el caso de la rendija simple, se observan eb su interior sonas de luz y oscuridad. Lo mismo sucede en los restantes puntos de luz anteriores.
+
+\section{Resonancia param\'etrica}
+
+Las oscilaciones no amortiguadas pueden excitarse no s\'olo por una fuerza peri\'odica externa, sino tambi\'en por la variaci\'on peri\'odica de los par\'ametros del sistema oscilatorio. Esta excitaci\'on de las oscilaciones se denomina resonancia param\'etrica. Como ejemplos se pueden citar el balanceo automantenido en un columpio o el botafumeiro de la catedral de Santiago de Compostela.  
+%%% J.Piedra %%% 
+%%% J.Piedra %%% \begin{figure}[htb]
+%%% J.Piedra %%% \begin{center}
+%%% J.Piedra %%% \hspace*{0.0cm}
+%%% J.Piedra %%% \includegraphics[width=0.6\textwidth]{figuras/RESONANCIA-PARAMETRICA.png}
+%%% J.Piedra %%% \end{center}
+%%% J.Piedra %%% \vspace*{-0.6cm}
+%%% J.Piedra %%% \caption[]{\label{fig:resoparame}{\it Resonancia param\'etrica.} Un p\'endulo oscila al final de una cadena que cada cierto tiempo es acortada.
+%%% J.Piedra %%%   Si el per\'iodo de acortamiento de la cadena y el per\'iodo propio del p\'endulo se sincronizan, el p\'endulo entrar\'a en resonancia.}
+%%% J.Piedra %%% \end{figure}
+%%% J.Piedra %%% 
+En un columpio la persona que oscila puede mantener, e incluso aumentar, la amplitud de su oscilaci\'on,
+si cuando alcanza la m\'inima altura recoge las piernas bajo el asiento. Con este movimiento, la persona
+hace que se eleve su centro de gravedad, disminuyendo su momento de inercia. Puesto que en ese punto se
+conserva el momento angular, aumentan su velocidad angular y su energ\'ia cin\'etica de rotaci\'on,
+incorporando energ\'ia al sistema y haciendo que aumente la amplitud de la oscilaci\'on. Esta energ\'ia
+cin\'etica adicional proviene, por supuesto, del trabajo que realizan sus m\'usculos contra la gravedad
+para elevar las piernas\footnote{Si la persona est\'a de pie sobre el asiento del columpio, debe elevarse
+en la posici\'on baja y agacharse en las posiciones altas.}.
+
+En el caso del botafumeiro, cada vez que el p\'endulo pasa por la vertical, en su posici\'on m\'as baja, se le da un peque\~no impulso que lo hace elevarse una altura $a$ y se deja ir la cuerda en $a \, \cos \phi_0$ cuando llega a su posici\'on m\'as alta. En cada ciclo de elevaci\'on y descenso se realiza un trabajo ($\cos\,  \phi \approx 1 - \phi^2/2$)
+$$m g a (1-\cos \, \phi_0) \approx {1\over 2} m g a \phi^2_0\, .$$
+Como la fuerza centr\'ipeta es $F_{\rm c}= m v_0^2/L$, donde $v_0$ es la m\'axima velocidad, el trabajo total por oscilaci\'on es
+$$W = 2 \left({1\over 2} m g a \phi_0^2 + {m v_0^2\over L}a\right)\, .$$
+Como $v_0 = L \phi_0 \omega$, 
+$$W = 6 {a\over L}{m v_0^2\over 2}\, .$$
+El trabajo realizado por la fuerza externa del p\'endulo es positivo y proporcional a la energ\'ia de \'este.
+
+La variaci\'on peri\'odica de los par\'ametros de un sistema oscilatorio (de frecuencia doble que la del propio sistema) implica un aumento sistem\'atico de la energ\'ia media $E$, siendo proporcional a $E$ la velocidad del aumento
+$${{\rm d} E \over {\rm d} t}= 2 \kappa E\, ,$$
+donde $\kappa$ es una constante (peque\~na). Esta relaci\'on es de la misma clase que la de las oscilaciones amortiguadas, pero con la diferencia de que la derivada es positiva, y no negativa. Esto significa que la energ\'ia (y con ella la amplitud) de las oscilaciones aumenta exponencialmente con el tiempo.
+ 
+\end{document}
