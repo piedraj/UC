@@ -58,7 +58,61 @@ Cuando un cuerpo se mueve respecto al aire aparecen dos fuerzas, una perpendicul
 \caption[]{\label{aerofoil}{\'Angulo de ataque (izquierda). Las l\'ineas de corriente del aire siguen la superficie del ala (centro). Las l\'ineas de corriente del aire no siguen la superficie del ala, entrando en turbulencia (derecha).}}
 \end{figure}
 
-Para \'angulos de ataque peque\~nos
+Para \'angulos de ataque peque\~nos la fuerza de elevaci\'on aumenta con el \'angulo. Sin embargo para \'angulos grandes las l\'ineas de corriente del aire se separan del ala y el movimiento se vuelve turbulento (Figura~\ref{aerofoil} derecha~\cite{babinsky}). Como consecuencia la fuerza de elevaci\'on disminuye para \'angulos mayores que un \'angulo de ataque, denominado \'angulo de atascamiento. El coeficiente de elevaci\'on, $C_e$, viene dado por $C_e = 2 F_e / (\rho v^2 S)$. Para \'angulos de ataque peque\~nos este coeficiente no depende de la velocidad.
+
+
+\section{Dispositivo experimental}
+
+Se dispone de un generador de aire regulable y un t\'unel aerodin\'amico de secci\'on variable. Tambi\'en se dispone de un perfil de ala de avi\'on con un \'angulo de ataque regulable con agujeros en la parte superior e inferior, lo que permite medir la presi\'on en distintos puntos del ala. Para medir la presi\'on se dispone de un man\'ometro de tubo inclinado y de un tubo de Pitot. La fuerza de elevaci\'on se mide mediante una balanza.
+
+
+\section{Desarrollo}
+
+\subsection{T\'unel aerodin\'amico}
+
+En la primera parte se utiliza un t\'unel aerodin\'amico de secci\'on variable para obtener la presi\'on total y el caudal para distintas secciones, lo que permite comprobar la ecuaci\'on de Bernoulli. Si la altura es constante se obtiene de esta ecuaci\'on que la presi\'on total $p_t$ es constante y el valor de la velocidad es $v^2 = (p_t - p) / \rho$, donde $p$ es la presi\'on est\'atica y $\rho$ es la densidad. Utiliza en esta parte la potencia m\'axima del generador. Mide la presi\'on total $p_t$ con el tubo de Pitot en las posiciones del t\'unel aerodin\'amico para las que se indica la secci\'on $A$. La presi\'on en el tubo con agujero lateral es $p_t = p + \rho v^2 / 2$, mientras que la presi\'on en el tubo con agujero en la punta es la presi\'on est\'atica $p$. Analiza si la presi\'on total $p_t$ es constante.
+
+El caudal $C = Av$ se obtiene midiendo la velocidad del aire a partir de la medida de la diferencia de presiones, $v^2 = (p_t - p)/ \rho$, donde $\rho = 1,2~{\rm kg/m^3}$ es la densidad del aire. Mide esta diferencia de presiones en las posiciones del t\'unel aerodin\'amico para las que se indica la secci\'on $A$. Analiza si el caudal es constante en las diferentes posiciones del t\'unel. Determina el valor del caudal.
+
+\subsection{Perfil de ala}
+
+Cuando hayas terminado esta parte el profesor montar\'a el ventilador como soplador con el perfil de ala de avi\'on. Para la potencia m\'axima del generador utiliza la balanza para medir la fuerza de elevaci\'on $F_e$ para los \'angulos de ataque $\alpha \ge -20^{\circ}$. Determina el \'angulo de atascamiento para el que la fuerza de elevaci\'on es m\'axima. Repite las medidas de la fuerza de elevaci\'on para una potencia menor del generador; para esta potencia obt\'en la velocidad del aire $v$ que produce el generador a partir de la diferencia de presiones $p_t - p$ medida con el tubo de Pitot. Repite la medida de la velocidad del aire para la potencia m\'axima del generador. Calcula el coeficiente de elevaci\'on $C_e = 2 F_e / (\rho v^2 S)$ con su error, donde $S = 0,016~{\rm m^2}$ es el \'area del ala, para los \'angulos de ataque $\alpha \geq -20^{\circ}$ y las dos potencias del generador. Representa en una misma gr\'afica $C_e$ con su error frente al \'angulo de ataque para las dos potencias del generador. Compara los resultados y com\'entalos.
+
+Para la potencia m\'axima del generador mide la presi\'on en los agujeros de la parte superior e inferior del perfil para el \'angulo de atascamiento. Estima la fuerza de elevaci\'on a partir de estas medidas de la presi\'on y del \'area del ala $S$. Ten en cuenta que la presi\'on en cada punto es la fuerza normal a la superficie en ese punto por unidad de \'area. Compara con la medida directa de la fuerza de elevaci\'on.
+
+
+\section{A incluir en el cuaderno de laboratorio y/o en el informe}
+
+\subsection{T\'unel aerodin\'amico}
+
+\begin{itemize}
+
+\item{Diferencia entre la presi\'on total y la presi\'on atmosf\'erica con su error para diferentes secciones. Comprueba si es constante.}
+\item{Velocidad y caudal con sus errores para diferentes secciones. Comprueba si el caudal es constante}
+\item{Valor del caudal con su error.}
+
+\end{itemize}
+
+\subsection{Perfil de ala}
+
+\begin{itemize}
+
+\item{Fuerza de elevaci\'on con su error para \'angulos de ataque $\alpha \geq -20^{\circ}$ y \'angulo de atascamiento para dos potencias del generador.}
+\item{Velocidad del aire con su error para dos potencias del generador.}
+\item{Coeficiente de elevaci\'on con su error para \'angulos de ataque $\alpha \geq -20^{\circ}$ y dos potencias del generador.}
+\item{Comparaci\'on en una misma gr\'afica del coeficiente de elevaci\'on con su error frente al \'angulo de ataque para las dos potencias del generador.}
+
+\end{itemize}
+
+\subsection{\'Angulo de atascamiento y potencia m\'axima del generador}
+
+\begin{itemize}
+
+\item{Presi\'on con su error en los agujeros de la parte superior e inferior del perfil. Esquema con la posici\'on en el perfil de los agujeros.}
+\item{Estimaci\'on de la fuerza de elevaci\'on con su error a partir de estas medidas de la presi\'on.}
+\item{Comparaci\'on con la medida directa de la fuerza de elevaci\'on.}
+
+\end{itemize}
 
 
 %-------------------------------------------------------------------------------
