@@ -6,6 +6,7 @@ if [ $# -lt 1 ]; then
     echo " ./compile.sh LFI-Resonancia-Cuestionario.tex"
     echo " ./compile.sh LFI-Examen-2019.tex"
     echo " ./compile.sh LFI-Aerodinamica.tex"
+    echo " ./compile.sh LFI-Pohl.tex"
     echo "  "
     exit -1
 fi
