@@ -31,7 +31,7 @@ El p\'endulo de Pohl consta de un disco plano que gira respecto a un eje perpend
 
 \subsection{Oscilaciones libres}
 
-Al desplazar el disco un cierto \'angulo $\phi$ respecto de su posici\'on de equilibrio y dejarlo libre, act\'ua sobre el disco un momento de reacci\'on debido al muelle proporcional a $\phi$. Si se considera despreciable la fuerza de rozamiento con el aire y si no act\'ua ninguna fuerza de frenado (freno electromagn\'etico desconectado) el p\'endulo sigue un movimiento arm\'onico $\phi (t) = \phi_0 \cos (\omega_0 t + \delta_0)$ donde $\omega_0$ es la frecuencia propia del p\'endulo.
+Al desplazar el disco un cierto \'angulo $\phi$ respecto de su posici\'on de equilibrio y dejarlo libre, act\'ua sobre el disco un momento de reacci\'on debido al muelle proporcional a $\phi$. Si se considera despreciable la fuerza de rozamiento con el aire y si no act\'ua ninguna fuerza de frenado el p\'endulo sigue un movimiento arm\'onico $\phi (t) = \phi_0 \cos (\omega_0 t + \delta_0)$ donde $\omega_0$ es la frecuencia propia del p\'endulo.
 
 \subsection{Oscilaciones amortiguadas}
 
@@ -41,7 +41,7 @@ Cuando se tiene en cuenta la p\'erdida de energ\'ia debida a fuerzas de rozamien
 \phi (t) = \phi_0 \exp(-\gamma t) \cos(\omega_A t + \delta_0),
 \end{equation*}
 %
-donde $\gamma$ es el coeficiente de amortiguamiento y la frecuencia para el movimiento amortiguado es $\omega_A^2 = \omega_0^2 - \gamma^2$. En los tiempos $t_n$ en los que el coseno toma los valores $+1$ (m\'aximos) y $-1$ (m\'inimos) se obtiene
+donde $\gamma$ es el coeficiente de amortiguamiento y la frecuencia para el movimiento amortiguado es $\omega_A = \sqrt{\omega_0^2 - \gamma^2}$. En los tiempos $t_n$ en los que el coseno toma los valores $+1$ (m\'aximos) y $-1$ (m\'inimos) se obtiene
 %
 \begin{equation}
 \label{equation:exponential}
@@ -50,20 +50,29 @@ donde $\gamma$ es el coeficiente de amortiguamiento y la frecuencia para el movi
 
 \subsection{Oscilaciones forzadas}
 
-En las oscilaciones amortiguadas la amplitud, y por tanto la energ\'ia, decrece con el tiempo hasta que el p\'endulo se para. Para mantener las oscilaciones se utiliza un motor que proporciona un forzamiento peri\'odico de frecuencia $\Omega$. En el estado estacionario se obtiene el movimiento arm\'onico $\phi(t) = A \cos ( \Omega t + \delta)$. Los valores de la amplitud $A$ y del desfase $\delta$ con respecto al forzamiento vienen dados por las expresiones
+En las oscilaciones amortiguadas la amplitud, y por tanto la energ\'ia, decrece con el tiempo hasta que el p\'endulo se para. Para mantener las oscilaciones se utiliza un motor que proporciona un forzamiento peri\'odico de frecuencia $\Omega$. En el estado estacionario se obtiene el movimiento arm\'onico $\phi(t) = A \cos ( \Omega t + \delta)$. Los valores de la amplitud $A$ y del desfase $\delta$ vienen dados por las expresiones
 %
 \begin{eqnarray*}
 A = \frac{M_0/I}{\sqrt{\left(w_0^2 - \Omega^2\right) + 4 \gamma^2\Omega^2}},\\
 \\
 \delta = \arctan\left(\frac{2\gamma\Omega}{w_0^2 - \Omega^2}\right).
 \end{eqnarray*}
-
-La amplitud de las oscilaciones alcanza un valor m\'aximo para la frecuencia de forzamiento $\Omega^2 = \Omega_r^2 = \omega_0^2 - 2\gamma^2$. En estas condiciones se dice que existe resonancia y $\Omega_r$ se denomina frecuencia de resonancia.
+%
+La amplitud de las oscilaciones alcanza el valor m\'aximo para la frecuencia de forzamiento $\Omega_r = \sqrt{\omega_0^2 - 2\gamma^2}$. En estas condiciones se dice que existe resonancia y $\Omega_r$ se denomina frecuencia de resonancia.
 
 
 \section{Dispositivo experimental}
 
-Se dispone de un p\'endulo de torsi\'on de Pohl con un freno electromagn\'etico para amortiguar las oscilaciones. El funcionamiento de este freno est\'a basado en la generaci\'on de corrientes de Foucault sobre el disco de cobre debidas al campo magn\'etico que crea el electroim\'an colocado en la base del p\'endulo. El electroim\'an est\'a alimentado con corriente continua y la intensidad se mide con un amper\'imetro colocado en serie. {\bf ADVERTENCIA IMPORTANTE: el freno electromagn\'etico soporta una intensidad m\'axima de 1~A.} Para las oscilaciones forzadas se dispone de un motor el\'ectrico que permite aplicar una fuerza peri\'odica de frecuencia variable $\Omega$ al p\'endulo, a trav\'es de una palanca que lo conecta al resorte. La frecuencia de las oscilaciones forzadas $\Omega$ puede modificarse con los dos botones de control grueso y fino situados en la parte superior del motor, el cual est\'a alimentado con corriente continua y el voltaje se mide mediante dos conexiones situadas en la parte inferior del motor. {\bf ADVERTENCIA IMPORTANTE: el motor soporta una intensidad m\'axima de 650~mA.} Para las medidas del per\'iodo y de la amplitud de las oscilaciones se dispone de un sensor de rotaci\'on conectado a un ordenador.
+Se dispone de un p\'endulo de torsi\'on de Pohl con un freno electromagn\'etico para amortiguar las oscilaciones. El funcionamiento de este freno est\'a basado en la generaci\'on de corrientes de Foucault sobre el disco de cobre debidas al campo magn\'etico que crea el electroim\'an colocado en la base del p\'endulo. El electroim\'an est\'a alimentado con corriente continua y la intensidad se mide con un amper\'imetro colocado en serie. {\bf ADVERTENCIA IMPORTANTE: el freno electromagn\'etico soporta una intensidad m\'axima de 1~A.} Para las oscilaciones forzadas se dispone de un motor el\'ectrico que permite aplicar una fuerza peri\'odica de frecuencia variable $\Omega$ al p\'endulo, a trav\'es de una palanca que lo conecta al resorte. La frecuencia de las oscilaciones forzadas $\Omega$ puede modificarse con los dos botones de control grueso y fino situados en la parte superior del motor, el cual est\'a alimentado con corriente continua y el voltaje se mide mediante dos conexiones situadas en la parte inferior del motor. {\bf ADVERTENCIA IMPORTANTE: el motor soporta una intensidad m\'axima de 650~mA.} Para las medidas del per\'iodo y de la amplitud de las oscilaciones se dispone de un sensor de rotaci\'on conectado a un ordenador. El dispositivo experimental se puede observar en la Figura~\ref{pohl}.
+%
+\begin{figure}[htb]
+\begin{center}
+\hspace*{0.0cm}
+\includegraphics[width=0.9\textwidth]{figuras/pohl_Figura_1.jpg}
+\end{center}
+\vspace*{-0.6cm}
+\caption[]{\label{pohl}{P\'endulo de torsi\'on de Pohl. En la parte izquierda de la imagen se puede ver el sensor de movimiento, el cual est\'a conectado al p\'endulo por un hilo. En la base del p\'endulo se encuentra el freno electromagn\'etico y a su derecha est\'a el motor el\'ectrico causante de las oscilaciones forzadas.}}
+\end{figure}
 
 
 \section{Desarrollo}
@@ -76,11 +85,11 @@ Mide en primer lugar el per\'iodo $T$ de las oscilaciones libres sin conectar el
 
 \subsection{Oscilaciones amortiguadas}
 
-Conecta el freno electromagn\'etico. Repite las medidas del per\'iodo $T$ de las oscilaciones y del coeficiente de amortiguamiento $\gamma$ para el valor 6 V (voltios) del potencial de la fuente de alimentaci\'on y anota el valor de la intensidad. A partir del per\'iodo calcula la frecuencia $\omega$ con su error. Compara con el valor te\'orico $\omega_A^2 = \omega_0^2 - \gamma^2$. Utiliza para $\omega_0$ el valor obtenido para las oscilaciones con el freno desconectado. Analiza si el per\'iodo disminuye o aumenta de una oscilaci\'on a la siguiente. Compara el per\'iodo con el obtenido para el caso sin freno para oscilaciones con amplitudes similares.
+Conecta el freno electromagn\'etico. Repite las medidas del per\'iodo $T$ de las oscilaciones y del coeficiente de amortiguamiento $\gamma$ para el valor 6 V del potencial de la fuente de alimentaci\'on y anota el valor de la intensidad. A partir del per\'iodo calcula la frecuencia $\omega$ con su error. Compara con el valor te\'orico $\omega_A = \sqrt{\omega_0^2 - \gamma^2}$. Utiliza para $\omega_0$ el valor obtenido para las oscilaciones con el freno desconectado. Analiza si el per\'iodo disminuye o aumenta de una oscilaci\'on a la siguiente. Compara el per\'iodo con el obtenido para el caso sin freno para oscilaciones con amplitudes similares.
 
 \subsection{Oscilaciones forzadas}
 
-Desconecta el freno. Conecta el motor a la fuente de alimentaci\'on. Observa cualitativamente la diferencia de fase $\delta$ entre las oscilaciones del disco (flecha blanca) y las del resorte unido al motor (flecha negra) para frecuencias de forzamiento $\Omega$ muy inferiores y muy superiores a $\omega_0$. Mide la amplitud $A$ y la frecuencia $\Omega$ de las oscilaciones forzadas estacionarias para diferentes valores de la frecuencia del motor. Anota los valores del voltaje. {\bf Para medir las amplitudes y frecuencias de las oscilaciones forzadas estacionarias se debe esperar hasta que desaparezcan los transitorios.} Las amplitudes de oscilaci\'on se deben medir como la media de las desviaciones del p\'endulo a izquierda y derecha, ya que posiblemente el punto intermedio de la oscilaci\'on no sea el cero de la escala. En las proximidades de la frecuencia de resonancia controla la variaci\'on de la frecuencia mediante el ajuste fino. Representa gr\'aficamente la amplitud de oscilaci\'on estacionaria $A$ frente a la frecuencia $\Omega$ (curva de resonancia). Estima el valor de la frecuencia de resonancia $\Omega_r$. Compara el resultado con la frecuencia obtenida para las oscilaciones libres y con el valor te\'orico dado por $\Omega_r^2 = \omega_0^2 - 2\gamma^2$. {\bf NOTA: parar con la mano para iniciar una medida para un voltaje nuevo, proporcionando unas condiciones iniciales reproducibles.}
+Desconecta el freno. Conecta el motor a la fuente de alimentaci\'on. Observa cualitativamente la diferencia de fase $\delta$ entre las oscilaciones del disco (flecha blanca) y las del resorte unido al motor (flecha negra) para frecuencias de forzamiento $\Omega$ muy inferiores y muy superiores a $\omega_0$. Mide la amplitud $A$ y la frecuencia $\Omega$ de las oscilaciones forzadas estacionarias para diferentes valores de la frecuencia del motor. Anota los valores del voltaje. {\bf Para medir las amplitudes y frecuencias de las oscilaciones forzadas estacionarias se debe esperar hasta que desaparezcan los transitorios.} Las amplitudes de oscilaci\'on se deben medir como la media de las desviaciones del p\'endulo a izquierda y derecha, ya que posiblemente el punto intermedio de la oscilaci\'on no sea el cero de la escala. En las proximidades de la frecuencia de resonancia controla la variaci\'on de la frecuencia mediante el ajuste fino. Representa gr\'aficamente la amplitud de oscilaci\'on estacionaria $A$ frente a la frecuencia $\Omega$ (curva de resonancia). Estima el valor de la frecuencia de resonancia $\Omega_r$. Compara el resultado con la frecuencia obtenida para las oscilaciones libres y con el valor te\'orico dado por $\Omega_r = \sqrt{\omega_0^2 - 2\gamma^2}$. {\bf NOTA: parar con la mano para iniciar una medida para un voltaje nuevo, proporcionando unas condiciones iniciales reproducibles.}
 
 
 \section{Comprueba que has incluido en el cuaderno de laboratorio y/o en el informe}

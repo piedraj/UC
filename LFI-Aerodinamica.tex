@@ -63,16 +63,31 @@ Para \'angulos de ataque peque\~nos la fuerza de elevaci\'on aumenta con el \'an
 
 \section{Dispositivo experimental}
 
-Se dispone de un generador de aire regulable y un t\'unel aerodin\'amico de secci\'on variable. Tambi\'en se dispone de un perfil de ala de avi\'on con un \'angulo de ataque regulable con agujeros en la parte superior e inferior, lo que permite medir la presi\'on en distintos puntos del ala. Para medir la presi\'on se dispone de un man\'ometro de tubo inclinado y de un tubo de Pitot. La fuerza de elevaci\'on se mide mediante una balanza.
+Se dispone de un generador de aire regulable y un t\'unel aerodin\'amico de secci\'on variable (Figura~\ref{dispositivo} izquierda). Tambi\'en se dispone de un perfil de ala de avi\'on con un \'angulo de ataque regulable con agujeros en la parte superior e inferior (Figura~\ref{aerofoil} centro) lo que permite medir la presi\'on en distintos puntos del ala. Para medir la presi\'on se dispone de un man\'ometro de tubo inclinado (Figura~\ref{aerofoil} derecha) y de un tubo de Pitot. La fuerza de elevaci\'on se mide mediante una balanza.
+%
+\begin{figure}[htb]
+\begin{center}
+\hspace*{0.0cm}
+\includegraphics[width=0.552\textwidth]{figuras/aerodinamica_Figura_2a.jpg}
+\includegraphics[width=0.174\textwidth]{figuras/aerodinamica_Figura_2b.jpg}
+\includegraphics[width=0.174\textwidth]{figuras/aerodinamica_Figura_2c.jpg}
+\end{center}
+\vspace*{-0.6cm}
+\caption[]{\label{dispositivo}{Generador de aire regulable y t\'unel aerodin\'amico de secci\'on variable (izquierda). Perfil de ala de avi\'on y balanza (centro). Detalle de la muesca del l\'iquido del man\'ometro de tubo inclinado (derecha).}}
+\end{figure}
 
 
 \section{Desarrollo}
 
 \subsection{T\'unel aerodin\'amico}
 
-En la primera parte se utiliza un t\'unel aerodin\'amico de secci\'on variable para obtener la presi\'on total y el caudal para distintas secciones, lo que permite comprobar la ecuaci\'on de Bernoulli. Si la altura es constante se obtiene de esta ecuaci\'on que la presi\'on total $p_t$ es constante y el valor de la velocidad es $v^2 = (p_t - p) / \rho$, donde $p$ es la presi\'on est\'atica y $\rho$ es la densidad. Utiliza en esta parte la potencia m\'axima del generador. Mide la presi\'on total $p_t$ con el tubo de Pitot en las posiciones del t\'unel aerodin\'amico para las que se indica la secci\'on $A$. La presi\'on en el tubo con agujero lateral es $p_t = p + \rho v^2 / 2$, mientras que la presi\'on en el tubo con agujero en la punta es la presi\'on est\'atica $p$. Analiza si la presi\'on total $p_t$ es constante.
-
-El caudal $C = Av$ se obtiene midiendo la velocidad del aire a partir de la medida de la diferencia de presiones, $v^2 = (p_t - p)/ \rho$, donde $\rho = 1,2~{\rm kg/m^3}$ es la densidad del aire. Mide esta diferencia de presiones en las posiciones del t\'unel aerodin\'amico para las que se indica la secci\'on $A$. Analiza si el caudal es constante en las diferentes posiciones del t\'unel. Determina el valor del caudal.
+En la primera parte se utiliza un t\'unel aerodin\'amico de secci\'on variable para obtener la presi\'on total y el caudal para distintas secciones, lo que permite comprobar la ecuaci\'on de Bernoulli. Si la altura es constante se obtiene que el valor de la velocidad es
+%
+\begin{equation*}
+v = \sqrt{\frac{2(p_t - p)}{\rho}},
+\end{equation*}
+%
+donde $p_t$ es la presi\'on total,  $p$ es la presi\'on est\'atica y $\rho = 1,2~{\rm kg/m^3}$ es la densidad del aire. Utiliza en esta parte la potencia m\'axima del generador. Mide la presi\'on total con el tubo de Pitot en las posiciones del t\'unel aerodin\'amico para las que se indica la secci\'on $A$. La presi\'on en el tubo con agujero lateral es $p_t = p + \rho v^2 / 2$, mientras que la presi\'on en el tubo con agujero en la punta es la presi\'on est\'atica $p$. Analiza si la presi\'on total $p_t$ es constante. El caudal $C = Av$ se obtiene calculando la velocidad del aire a partir de la medida de la diferencia de presiones en las posiciones del t\'unel aerodin\'amico para las que se indica la secci\'on $A$. Analiza si el caudal es constante en las diferentes posiciones del t\'unel y determina el valor del caudal.
 
 \subsection{Perfil de ala}
 
@@ -80,7 +95,7 @@ Cuando hayas terminado esta parte el profesor montar\'a el ventilador como sopla
 
 Para la potencia m\'axima del generador mide la presi\'on en los agujeros de la parte superior e inferior del perfil para el \'angulo de atascamiento. Estima la fuerza de elevaci\'on a partir de estas medidas de la presi\'on y del \'area del ala $S$. Ten en cuenta que la presi\'on en cada punto es la fuerza normal a la superficie en ese punto por unidad de \'area. Compara con la medida directa de la fuerza de elevaci\'on.
 
-
+\newpage
 \section{Comprueba que has incluido en el cuaderno de laboratorio y/o en el informe}
 
 \subsection*{T\'unel aerodin\'amico}
