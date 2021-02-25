@@ -11,16 +11,16 @@ void weighted_mean()
 {
   // Input values
   //----------------------------------------------------------------------------
-  v_value.push_back(129.);
-  v_value.push_back(130.);
+  v_value.push_back(137.);
+  v_value.push_back(134.);
   v_value.push_back(131.);
   v_value.push_back(130.);
-  v_value.push_back(131.);
-  v_value.push_back(128.);
+  v_value.push_back(127.);
+  v_value.push_back(124.);
 
   v_error.push_back(4.);
   v_error.push_back(4.);
-  v_error.push_back(3.);
+  v_error.push_back(4.);
   v_error.push_back(3.);
   v_error.push_back(3.);
   v_error.push_back(3.);
