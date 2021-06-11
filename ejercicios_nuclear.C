@@ -69,8 +69,12 @@ void ejercicios_nuclear()
   //
   //----------------------------------------------------------------------------
   Double_t K40_decay_rate = 4140.;  // [Bq]
+
+  Double_t K40_half_life_s = K40_half_life * 365. * 24. * 3600.;
+
+  Double_t K40_lambda_s = log(2) / K40_half_life_s;
   
-  Double_t N_K40 = (K40_half_life * 365. * 24. * 3600. / log(2)) * K40_decay_rate;  // decay_rate = R = lambda * N
+  Double_t N_K40 = K40_decay_rate / K40_lambda_s;  // decay_rate = R = lambda * N
 
   Double_t K40_mass_mg = 1e3 * N_K40 * K40_mass_u / N_Avogadro;
 
@@ -92,7 +96,13 @@ void ejercicios_nuclear()
   printf(" [20210531 - 2b] alpha energy = %.3e J = %.3f MeV\n\n", alpha_energy_J, alpha_energy_MeV);
   printf(" [20210531 - 2c] rock age = %.3e s = %.3e years\n\n", rock_age_seconds, rock_age_years);
   printf("------------------------------------------------------------------\n\n");
-  printf(" [20210609 - 4a] Potassium-40 mass = %.0f mg\n", K40_mass_mg);
-  printf("                 Potassium-40 fraction = %.4f%s\n\n", 1e2 * K40_mass_mg / K_mass_mg, "%");
-  printf(" [20210609 - 4d] Electrostatic / gravitational energy = %.2e\n\n", electrostatic_gravitational_ratio);
+  printf(" [20210609 - 4a] Potassium-40 half-life = %.3e years = %.3e s\n", K40_half_life, K40_half_life_s);
+  printf("                                 lambda = %.3e 1/s\n", K40_lambda_s);
+  printf("                                      N = %.3e atoms\n", N_K40);
+  printf("                                   mass = %.3f g = %.0f mg\n", 1e-3 * K40_mass_mg, K40_mass_mg);
+  printf("                               fraction = %.4f%s\n\n", 1e2 * K40_mass_mg / K_mass_mg, "%");
+  printf(" [20210609 - 4d]   electrostatic energy = %.3e\n", electrostatic_energy);
+  printf("                   gravitational energy = %.3e\n", gravitational_energy);
+  printf("   gravitational / electrostatic energy = %.3e\n", 1. / electrostatic_gravitational_ratio);
+  printf("   electrostatic / gravitational energy = %.3e\n\n", electrostatic_gravitational_ratio);
 }
