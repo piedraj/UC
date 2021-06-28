@@ -4,6 +4,7 @@ Double_t N_Avogadro     = 6.0221367e23;    // [particles/mol]
 Double_t C14_mass_u     = 14.003242;       // [u]
 Double_t N14_mass_u     = 14.003074;       // [u]
 Double_t K40_mass_u     = 39.9639982;      // [u]
+Double_t Sr90_mass_u    = 89.90773;        // [u]
 Double_t e_mass_u       = 5.48579903e-4;   // [u]
 Double_t e_mass_MeV     = 0.51099906;      // [MeV]
 Double_t proton_mass_kg = 1.672623e-27;    // [kg]
@@ -14,6 +15,7 @@ Double_t eV             = 1.60217733e-19;  // [J]
 Double_t r0             = 1.2e-15;         // [m]
 Double_t Rb87_half_life = 4.88e10;         // [years]
 Double_t K40_half_life  = 1.277e9;         // [years]
+Double_t Sr90_half_life = 28.79;           // [years]
 Double_t Au_A           = 197;
 Double_t Au_Z           = 79;
 Double_t alpha_Z        = 2;
@@ -89,6 +91,19 @@ void ejercicios_nuclear()
   Double_t electrostatic_gravitational_ratio = electrostatic_energy / gravitational_energy;
 
 
+  // 4a - Examen de julio de FBIII (6 de julio de 2021)
+  //----------------------------------------------------------------------------
+  Double_t Sr90_mass_g = 5e3;
+
+  Double_t Sr90_R = 10. / 60.;  // desintegraciones / s
+
+  Double_t Sr90_N0 = Sr90_mass_g * N_Avogadro / Sr90_mass_u;
+
+  Double_t Sr90_half_life_s = Sr90_half_life * 365. * 24. * 3600.;
+
+  Double_t building_safe_time = (Sr90_half_life / log(2)) * log(log(2) * Sr90_N0 / (Sr90_half_life_s * Sr90_R));
+
+
   // Results
   //----------------------------------------------------------------------------
   printf("\n");
@@ -105,4 +120,6 @@ void ejercicios_nuclear()
   printf("                   gravitational energy = %.3e\n", gravitational_energy);
   printf("   gravitational / electrostatic energy = %.3e\n", 1. / electrostatic_gravitational_ratio);
   printf("   electrostatic / gravitational energy = %.3e\n\n", electrostatic_gravitational_ratio);
+  printf("------------------------------------------------------------------\n\n");
+  printf(" [20210706 - 4a] Building safe time = %.2f years\n\n", building_safe_time);
 }
