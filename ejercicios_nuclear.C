@@ -95,13 +95,13 @@ void ejercicios_nuclear()
   //----------------------------------------------------------------------------
   Double_t Sr90_mass_g = 5e3;
 
-  Double_t Sr90_R = 10. / 60.;  // desintegraciones / s
+  Double_t Sr90_R = 10.;  // desintegraciones / minuto
 
   Double_t Sr90_N0 = Sr90_mass_g * N_Avogadro / Sr90_mass_u;
 
-  Double_t Sr90_half_life_s = Sr90_half_life * 365. * 24. * 3600.;
+  Double_t Sr90_half_life_min = Sr90_half_life * 365. * 24. * 60.;
 
-  Double_t building_safe_time = (Sr90_half_life / log(2)) * log(log(2) * Sr90_N0 / (Sr90_half_life_s * Sr90_R));
+  Double_t building_safe_time = (Sr90_half_life / log(2)) * log(log(2) * Sr90_N0 / (Sr90_half_life_min * Sr90_R));
 
 
   // Results
@@ -121,5 +121,7 @@ void ejercicios_nuclear()
   printf("   gravitational / electrostatic energy = %.3e\n", 1. / electrostatic_gravitational_ratio);
   printf("   electrostatic / gravitational energy = %.3e\n\n", electrostatic_gravitational_ratio);
   printf("------------------------------------------------------------------\n\n");
-  printf(" [20210706 - 4a] Building safe time = %.2f years\n\n", building_safe_time);
+  printf(" [20210706 - 4a] Strontium-90 half-life = %.3e min = %.3e s\n", Sr90_half_life_min, Sr90_half_life_min*60);
+  printf("                                     N0 = %.3e atoms\n", Sr90_N0);
+  printf("                     Building safe time = %.2f years = %.3e s\n\n", building_safe_time, building_safe_time*365*24*3600);
 }
