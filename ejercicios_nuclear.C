@@ -104,6 +104,26 @@ void ejercicios_nuclear()
   Double_t building_safe_time = (Sr90_half_life / log(2)) * log(log(2) * Sr90_N0 / (Sr90_half_life_min * Sr90_R));
 
 
+  //----------------------------------------------------------------------------
+  //
+  // Ejercicio 4a del examen de julio de FBIII (12 de julio de 2021)
+  //
+  //    study guide for Tipler Physics, Fourth Edition
+  //    Volumes 2 and 3, Chapters 22-41
+  //    Mosca, Gautreau, Kyker
+  //    Chapter 40 Nuclear Physics
+  //    VI. Problems and Solutions
+  //    Problem 6. (page 244)
+  //
+  //----------------------------------------------------------------------------
+  Double_t Au200_R0 = 15.;  // [mCi]
+  Double_t Au200_R  = 13.;  // [mCi]
+
+  Double_t Au200_time_min = 10.;
+
+  Double_t Au200_half_life_min = Au200_time_min * log(2) / log(Au200_R0 / Au200_R);
+
+
   // Results
   //----------------------------------------------------------------------------
   printf("\n");
@@ -124,4 +144,6 @@ void ejercicios_nuclear()
   printf(" [20210706 - 4a] Strontium-90 half-life = %.3e min = %.3e s\n", Sr90_half_life_min, Sr90_half_life_min*60);
   printf("                                     N0 = %.3e atoms\n", Sr90_N0);
   printf("                     Building safe time = %.2f years = %.3e s\n\n", building_safe_time, building_safe_time*365*24*3600);
+  printf("------------------------------------------------------------------\n\n");
+  printf(" [20210712 - 4a] Gold-200 half-life = %.2f min\n\n", Au200_half_life_min);
 }
