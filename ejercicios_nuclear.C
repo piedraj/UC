@@ -142,6 +142,7 @@ void ejercicios_nuclear()
   printf("   electrostatic / gravitational energy = %.3e\n\n", electrostatic_gravitational_ratio);
   printf("------------------------------------------------------------------\n\n");
   printf(" [20210706 - 4a] Strontium-90 half-life = %.3e min = %.3e s\n", Sr90_half_life_min, Sr90_half_life_min*60);
+  printf("                                 lambda = %.3e 1/s\n", log(2)/(Sr90_half_life_min*60));
   printf("                                     N0 = %.3e atoms\n", Sr90_N0);
   printf("                     Building safe time = %.2f years = %.3e s\n\n", building_safe_time, building_safe_time*365*24*3600);
   printf("------------------------------------------------------------------\n\n");
