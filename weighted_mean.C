@@ -11,19 +11,19 @@ void weighted_mean()
 {
   // Input values
   //----------------------------------------------------------------------------
-  v_value.push_back(137.);
-  v_value.push_back(134.);
-  v_value.push_back(131.);
-  v_value.push_back(130.);
-  v_value.push_back(127.);
-  v_value.push_back(124.);
+  v_value.push_back(0.126);
+  v_value.push_back(0.127);
+  v_value.push_back(0.125);
+  v_value.push_back(0.124);
+  v_value.push_back(0.124);
+  v_value.push_back(0.125);
 
-  v_error.push_back(4.);
-  v_error.push_back(4.);
-  v_error.push_back(4.);
-  v_error.push_back(3.);
-  v_error.push_back(3.);
-  v_error.push_back(3.);
+  v_error.push_back(0.003);
+  v_error.push_back(0.003);
+  v_error.push_back(0.003);
+  v_error.push_back(0.003);
+  v_error.push_back(0.002);
+  v_error.push_back(0.002);
 
   int n_measurements = v_value.size();
 
