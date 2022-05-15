@@ -2,11 +2,11 @@
 
 if [ $# -lt 1 ]; then
     echo "  "
-    echo " ./compile.sh LFI-Resonancia.tex"
-    echo " ./compile.sh LFI-Resonancia-Cuestionario.tex"
-    echo " ./compile.sh LFI-Examen-2019.tex"
     echo " ./compile.sh LFI-Aerodinamica.tex"
     echo " ./compile.sh LFI-Pohl.tex"
+    echo "  "
+    echo " ./compile.sh FBIII-Examen-2021.tex"
+    echo " ./compile.sh FBIII-Problemas-2022.tex"
     echo "  "
     exit -1
 fi
