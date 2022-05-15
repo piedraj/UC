@@ -11,7 +11,7 @@ Float_t error_2 = 0.002;
 // Main
 //
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-void errores()
+void lfi_errores()
 {
   Float_t difference = fabs(value_1 - value_2);
 

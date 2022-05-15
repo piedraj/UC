@@ -1,7 +1,7 @@
 Get the material
 ====
 
-    git clone https://github.com/piedraj/LFI.git
+    git clone https://github.com/piedraj/UC.git
 
 
 Compile and clean

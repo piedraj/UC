@@ -7,7 +7,7 @@ std::vector<float> v_error;
 // Compute the mean +- error in two different ways
 //
 //------------------------------------------------------------------------------
-void weighted_mean()
+void lfi_weighted_mean()
 {
   // Input values
   //----------------------------------------------------------------------------

@@ -17,7 +17,7 @@ Float_t lower_pressure = -53 - 37 - 16 - 4;  // Pa
 // main
 //
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-void examen_2019()
+void lfi_examen_2019()
 {
   Float_t velocity = sqrt(2. * pressure / density);
 
