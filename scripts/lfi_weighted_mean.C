@@ -11,19 +11,19 @@ void lfi_weighted_mean()
 {
   // Input values
   //----------------------------------------------------------------------------
-  v_value.push_back(0.126);
-  v_value.push_back(0.127);
-  v_value.push_back(0.125);
+  v_value.push_back(0.12);
+  v_value.push_back(0.12);
+  v_value.push_back(0.123);
   v_value.push_back(0.124);
   v_value.push_back(0.124);
-  v_value.push_back(0.125);
+  v_value.push_back(0.124);
 
-  v_error.push_back(0.003);
-  v_error.push_back(0.003);
-  v_error.push_back(0.003);
-  v_error.push_back(0.003);
-  v_error.push_back(0.002);
-  v_error.push_back(0.002);
+  v_error.push_back(0.02);
+  v_error.push_back(0.02);
+  v_error.push_back(0.015);
+  v_error.push_back(0.015);
+  v_error.push_back(0.015);
+  v_error.push_back(0.014);
 
   int n_measurements = v_value.size();
 
