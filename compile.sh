@@ -5,7 +5,7 @@ if [ $# -lt 1 ]; then
     echo " ./compile.sh LFI-Aerodinamica.tex"
     echo " ./compile.sh LFI-Pohl.tex"
     echo "  "
-    echo " ./compile.sh FBIII-Examen-2022.tex"
+    echo " ./compile.sh FBIII-Examen-2023.tex"
     echo " ./compile.sh FBIII-Problemas.tex"
     echo " ./compile.sh FBIII-Practica-6.tex"
     echo "  "
