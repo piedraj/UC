@@ -1,0 +1,59 @@
+
+%-------------------------------------------------------------------------------
+\newpage
+\section{Errores}
+%-------------------------------------------------------------------------------
+
+\subsection{T\'unel aerodin\'amico}
+
+Cuando la altura es constante el valor de la velocidad es
+%
+\begin{equation*}
+  v = \sqrt{\frac{2(p_t - p)}{\rho}} = \sqrt{\frac{\Delta p}{0,6}},
+\end{equation*}
+%
+donde $\Delta p = p_t - p$ y la densidad del aire es $\rho = 1,2~{\rm kg/m^3}$. Sabiendo que $\sigma_{\Delta p} = \sqrt{2}~{\rm Pa}$, el error asociado a la velocidad es
+%
+\begin{equation*}
+  \sigma_v = \left|\frac{\partial v}{\partial \Delta p}\right|\sigma_{\Delta p} = \sqrt{\frac{1}{1,2\,\Delta p}}.
+\end{equation*}
+%
+El error $\sigma_C$ del caudal $C = Av$ es
+%
+\begin{equation*}
+  \sigma_C = \sqrt{v^2\sigma_A^2 + A^2 \sigma_v^2} = \sqrt{\frac{1}{0,6}\left(10^{-8}\Delta p + \frac{A^2}{2 \Delta p}\right)},
+\end{equation*}
+%
+donde se ha tenido en cuenta que $\sigma_A = 10^{-4}~{\rm m^2}$.
+
+\subsection{Perfil de ala}
+
+En esta parte de la pr\'actica se mide la fuerza de elevaci\'on $F_e = mg$. Adem\'as, para la potencia m\'axima y para el \'angulo de atascamiento, se realiza una estimaci\'on alternativa $F_p$ de la fuerza de elevaci\'on,
+%
+\begin{equation*}
+  F_p = p\,S\cos\alpha.
+\end{equation*}
+%
+Sabemos que esta estimaci\'on es una cota superior,
+%
+\begin{equation*}
+  F_{lift} = p\,S\cos\alpha - F_x\sin\alpha = F_p - F_x\sin\alpha < F_p.
+\end{equation*}
+%
+Considerando $g \simeq 10~{\rm m/s^2}$ y recordando que $\sigma_m = 1~{\rm g}$ obtenemos
+%
+\begin{equation*}
+  \sigma_{F_e} = 0,01~{\rm N}.
+\end{equation*}
+%
+Para calcular el error de $F_p$ es necesario determinar primero el error de $p$,
+%
+\begin{equation*}
+  p = \sum_{i=1}^{8} p_i ~\Rightarrow~ \sigma_p = \sqrt{8\,\sigma_{\Delta p}^2} = 4~{\rm Pa}.
+\end{equation*}
+%
+Sabiendo que $S = 0,016~{\rm m^2}$ y que los \'angulos t\'ipicos de atascamiento est\'an entre $30^{\circ}$ y $40^{\circ}$, se obtiene que el error de $F_p$ es
+%
+\begin{equation*}
+  0,050~{\rm N} \leq \sigma_{F_p} \leq 0,055~{\rm N} ~\Rightarrow~ \sigma_{F_p} \simeq 5\,\sigma_{F_e}.
+\end{equation*}
