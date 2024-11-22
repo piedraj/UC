@@ -123,7 +123,22 @@ Estimaci\'on del factor de conversi\'on entre la medida del sensor de rotaci\'on
 
 \section*{Apartado t\'ecnico}
 
-El programa que usaremos para la realizaci\'on de esta pr\'actica es {\tt DataStudio}. Una vez dentro tendr\'as que elegir la opci\'on {\bf Create Experiment} y entre los diferentes dispositivos posibles hay que elegir {\bf Rotary Motion Sensor}. Una vez elegido el tipo de sensor ser\'a necesario cambiar los siguientes par\'ametros en la configuraci\'on: el pi\~non en el que hemos puesto el hilo es el {\bf Large Pulley (O-Ring)}, la frecuencia con la que tomaremos medidas es de {\bf 200 Hz} y la resoluci\'on elegida ser\'a {\bf High}.
+El programa que usaremos para la realizaci\'on de esta pr\'actica es {\tt DataStudio}, el cual habr\'a que configurar siguiendo la Tabla~\ref{tabla:data-studio}.
+
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{l l l}
+    \hline
+    Opci\'on              & Crear experimento             & Create Experiment     \\
+    Dispositivo           & Sensor de movimiento circular & Rotary Motion Sensor  \\
+    Resoluci\'on          & Alta                          & High                  \\
+    Escala lineal         & Polea grande (garganta)       & Large Pulley (Groove) \\
+    Velocidad de muestreo & 200 Hz                        & 200 Hz                \\
+    \hline
+  \end{tabular}
+  \caption{Par\'ametros de {\tt DataStudio}.}
+  \label{tabla:data-studio}
+\end{table}
 
 
 %-------------------------------------------------------------------------------
