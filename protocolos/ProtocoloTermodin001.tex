@@ -1,0 +1,215 @@
+\documentclass[11pt]{articulo}
+\usepackage{graphicx}
+
+\baselineskip 25pt
+\textwidth 13cm
+\textheight 20cm
+\topmargin -1.5cm
+\oddsidemargin 2cm 
+\evensidemargin 2cm 
+
+\input option_keys
+\input Definir(99) 
+ 
+\begin{document}
+
+\title{\bf Aula `Espacio Tocar la Ciencia'} 
+ \author{ {\bf J \ Güémez}\\
+{\it Aula de la Ciencia}\\ Universidad de Cantabria\\
+}
+\maketitle
+
+
+\noindent
+{\huge \bf Protocolo de Experiencias\\ de Termodinámica}
+\vspace*{0.5cm}
+
+\large 
+
+\section{Destrucción de Energía Mecánica}
+
+La energía mecánica no se conserva: cuerpos que se mueven (cochecito), giran (peonzas) u oscilan (tentetieso o cuna de Newton), terminan
+por pararse.
+
+{\it Péndulo de Newton.} Tomando el péndulo de Newton como un dispositivo aislado, la única fuerza conservativa externa que actúa sobre él es la de la gravedad.
+En presencia de una fuerza de rozamiento, la segunda ley de Newton viene dada como:
+$$m \d v =  \left(m g \sen \, \theta - f\right) \d t$$
+La ecuación del centro de masas se puede poner como
+$$m d (v^2/2) = \left(m g \sen \, \theta - f\right) \d x\, .$$
+Expresando $d x = L \d \theta$, e integrando,  se tiene
+$${1\over 2} m \left(v_f^2 - v_i^2\right) = m g L\left(1 - \cos \, \theta_i\right) - f L \theta_i\, .$$
+Esta ecuación indica que el péndulo, partiendo del ángulo $\theta_i$, alcanzará una velocidad final $v_f$ menor que la que alcanzaría
+en ausencia de la fuerza de rozamiento $f$. 
+El primer principio de la termodinámica 
+$$\Delta K_{\rc \rmm} + \Delta U =W_\rext + Q\, ,$$
+aplicado a este proceso permite obtener que
+$${1\over 2} m \left(v_f^2 - v_i^2\right) = m g L\left(1 - \cos \, \theta_i\right) + Q\, ; h_i =L\left(1 - \cos \, \theta_i\right) $$
+donde se ha admitido que $\Delta U=0$ (la bola no varía su temperatura. La única fuerza que realiza un trabajo termodinámico es la gravitatoria.
+Comparando ambas ecuaciones, se tiene que:
+$$Q = - f L \theta_i\, .$$
+Este calor se emite al exterior, foco térmico a temperatura $T$, produciendo un aumento de la entropía del universo de:
+$$\Delta S_\rU = {f L \theta_i \over T}>0\, .$$
+Parte de la energía mecánica inicial, con entropía cero, se ha transformado en energía con entropía positiva, demostrándose que el proceso es irreversible. 
+
+Si el péndulo, en $\theta_i=0$, se lanza con velocidad inicial $v_f$, se tendrá la ecuación:
+$${1\over 2} m  v_f^2   = m g L\left(1 - \cos \, \theta_f\right) - f L \theta_f\, ,$$
+con $\theta_f < \theta_i$, demostrándose que no alcanzará la misma altura, con $h_f = L\left(1 - \cos \, \theta_i\right) < h_i$. 
+De nuevo se disipa energía, aumenta la entropía del universo y el proceso es irreversible.
+
+ {\it Péndulo más tierra.} Si como sistema se toman el péndulo más la tierra, no hay fuerzas externas al sistema, por lo que, de acuerdo con la segunda ley de Newton
+el centro de masas del sistema tiene aceleración nula y, según la ecuación del centro de masas, la energía cinética del centro de masas no varía, $\Delta K_{\rc \rmm}=0$.
+Aplicando el primer principio de la termodinámica, la energía de interacción tierra-bola aparece como energía de configuración y como parte de la energía interna del sistema conjunto:
+$$\Delta U = - \int_{r_i}^{r_i + h} G{{M_\rT} m \over R_\rT + r} \d r \approx - m g h\, ,$$
+de donde la variación de la energía cinética respecto del centro de masas es
+$$\Delta U = \Delta K + \Delta K_\rT \approx {1\over 2} m v_f^2\, ,$$
+de donde:
+$${1\over 2} m v_f^2 - m g h = Q\, .$$
+Con $Q<0$ se producirá un aumento de la entropía del universo y en cada medio ciclo del péndulo se perderá en forma de calor y de manera irreversible
+la diferencia entre la energía potencial y la energía cinética del péndulo. 
+
+Además de las leyes de la Mecánica se necesitan leyes adicionales para explicar lo que sucede en muchos procesos físicos que incluyen 
+procesos de destrucción de energía mecánica,
+fuerzas de rozamiento, o creación de energía mecánica, por ejemplo, en un cañón.
+\begin{enumerate}
+\item Pelotas que rebotan bastante bien y pelotas que rebotan mal. 
+\item Debido al rozamiento, toda la energía mecánica desaparece.
+\item {\it Energía metaestable.}
+\begin{itemize}
+\item Resorte de caucho (varios)
+\item Resorte arrollador. Teoría de Catástrofes.
+\item Vórtice en una botella. 
+\item Disoluciones sobresaturadas.
+\item Líquidos subenfriados (opcional). Mezclas de hielo y sal (mezcla frigorífica).
+\end{itemize}
+\item Producción de calor por fuerzas de rozamiento: al frotar una barra de aluminio o cobre con lana de vidrio, ésta aumenta su temperatura.
+\item Descripción fenomenológica de las fuerzas de rozamiento: Ecuación de Coulomb-Amontons.
+\item Fuerzas de rozamiento en líquidos (Stokes) y en gases (Newton). El descender con velocidad uniforme, se pierde energía mecánica en forma de calor.  
+\item Imán que desciende en tubo de cobre. La energía potencial gravitatoria produce electricidad y luego se va en forma de calor.
+
+\end{enumerate}
+
+\section{Pistón neumático}
+
+Cuando se comprime un gas en condiciones adiabáticas, la temperatura aumenta considerablemente.  Se pueden hacer los cálculos y se observa un aumento de temperatura de casi 300 K.  Temperatura de combustión de la celulosa. Fahrenheit 451. 
+
+Se ejerce una fuerza de unos 5~kg sobre balanza de baño. Fuerza de 50~N.
+El recorrido del émbolo es de unos 10~cm.
+Trabajo realizado $W\approx 5$~J.
+El diámetro del recipiente es de 1~cm, radio de $r\approx 0,5$~cm.
+Sección $A \approx \pi (0,5)^2 \approx 0,75$~cm$^2$.
+Con una longitud de 10~cm se tiene un volumen de $V=7,5$~cm$^3$.
+El número de moles es:
+$$n \approx {7,5 \over 22,4\times 10^3}\, ,$$
+considerando que 1 mol ocupa 22,4~L. 
+Mediante la expresión:
+$$ n c_V \Delta T = \Delta E\, ,$$
+con:
+$$c_V \approx {5 \over 2}   \approx 20~{\rm J mol^{-1}K^{-1}}\, $$
+se tiene:
+$$\Delta T \approx {5 (22,4\ttimes 10^3) \over 2\ttimes 7,5 \ttimes 20} \approx 500~{\rm ^\circ C}\, .$$
+El aumento de temperatura explica que se queme la celulosa. 
+
+\section{Nube en botella}
+
+Con la ayuda de una bomba de aire sin retroceso, se va aumentando la presión del aire encerrado en una botella de vidrio blanco cerrada por un tapón. Funciona mejor si hay agua líquida en la botella. Cuando el tapón salta por efecto de la presión, se produce una neblina. Esta neblina se puede poner mejor de manifiesto haciendo pasar un rayo de luz láser a través de la botella. Justo cuando se produce la explosión, las gotas de la neblina difunden la luz y se puede ver el rayo atravesando la botella, antes transparente.
+
+Hay que doblar la presión respecto de la atmosférica, en cuyo caso, se ejerce una presión de
+$$\Delta P \approx 10^5 (\pi 1^2 \ttimes 10^{-4}) \approx 30~{\rm N}\, ,$$
+como tirando del tapón con 3 kg.
+El volumen del gas es de $V\approx 0,5$~L y el volumen debe expandirse al doble, 
+$\Delta V \approx 0,5\ttimes 10^{-3}$~m$^{3}$.
+Bajo una presión externa de $P_0\approx 10^5$~Pa, el trabajo a realizar por el gas sería:
+$$W = P_0 \Delta V \approx 50~{\rm J}\, .$$
+Con
+$$2 n c_V \Delta T = -\left|W\right|\, ,$$
+$$ {2\ttimes 0,5 \over 22,4} 20 \Delta T = - 50\, ,$$
+$$\Delta T \approx - 40~{\rm ^\circ C}\, .$$
+
+La presión de vapor del agua $P$ varía con la temperatura $T$ como:
+$$\ln {P\over 10^5} \approx  -{2500 \ttimes 18 \over R}\left[{1\over T}-{1\over 373}\right]\, .$$
+
+\section{Máquinas térmicas. Creación de energía mecánica}
+
+\begin{enumerate}
+\item {\it Cañón.} Se colocan unas gotas de alcohol en un recipiente dotado de tapa que pueda saltar, se espera a que parte del alcohol se evapore, y la mezcla combustible se enciente con la ayuda de la chispa producida por un piezoeléctrico.  El recipiente sale lanzado a alta velocidad. 
+\item {\it Molinete térmico.} En el molinete térmico, la energía mecánica aparece gracias al calor. Similitudes y diferencias entre el molinete y el helicóptero [La unidad, la diversidad y la universalidad de la Física]. Revolución industrial. En los molinetes de madera se puede variar el ángulo de los álabes para demostrar que hay angulos 
+para los que no funciona. 
+
+{\it Molinete térmico.} Si como sistema único se toma el molinete, se tiene que la resultante de todas las fuerzas aplicadas sobre el mismo, ${\cal F}=0$.
+La segunda ley de Newton y la ecuación del centro de masas son idénticamente nulas y no proporcionan más información que la de que el centro de masas del sistema no variará su velocidad inicial.
+
+Aplicando la ecuación de Poinsot-Euler, considerando que sobre cada álabe se aplica una fuerza $F$ con un brazo $r$ durante un tiempo $t_0$, se tiene que
+$$I \omega_f = \sum_1^{12} F r t_0\, ; I \approx {1\over 2} m r^2$$
+La correspondiente ecuación de la energía cinética de rotación, equivalente rotacional de la ecuación del centro de masas en traslación, es:
+$${1\over 2} I \omega_f^2 = \sum_1^{12} F r \theta_0\, ,$$
+donde $\theta_0$ será el ángulo girado durante el tiempo $t_0$. Estos resultados son independientes del origen de la fuerza $F$ sobre cada álabe.
+Si se quiere entender el papel jugado por la reacción química de combustión que se produce entre la parafina y el aire, el calor producido, el calentamiento del aire y su posterior expansión y ascenso (según el principio de Arquímedes), con el papel de la tercera ley de Newton explicando el origen de la fuerza $F$ como reacción a la fuerza
+que el álabe hace sobre el aire ascendente para cambiar su dirección, hay que utilizar un sistema   más amplio.
+
+{\it Molinete térmico más la vela encendida más aire.}  Si como sistema conjunto se toma el molinete más la vela encendida, se tiene que no hay fuerzas externas
+netas aplicadas.  Por tanto, de acuerdo con la segunda ley de Newton la aceleración del centro de masas es $a_{\rc \rmm}=0$ y de acuerdo con la ecuación del centro de masas $\Delta K_{\rc \rmm}=0$. Para la rotación se obtienen los resultados anteriores. Aplicando el primer principio de la termodinámica, se tiene:
+$$\Delta K_{\rc \rmm} + \Delta U_\rR +  \Delta U_\xi = W_\rext + Q\, ,$$
+donde 
+$$ \Delta U_\rR = {1\over 2} I \omega_f^2\, ,$$
+es la variación de la energía interna debida a la rotación, 
+$$ \Delta U_\xi = n \left(\sum_p \Delta u_\rp - \sum_r \Delta u_\rr\right)\, ,$$
+es la variación de la energía interna debida a la reacción química, con energías asociadas a enlaces que se rompen y otros que se crean,
+$$W_\rext  = - P_\rext \Delta V\, ,$$
+es el trabajo de expansión contra la presión externa del aire que asciende y
+$$Q=  T \Delta S + Q_\rI\, ,$$
+es el calor intercambiado con el exterior, parte debido a la variación de entropía del entorno que debe compensar la posible
+disminución de entropía debido a la reacción química y $Q_\rI$ un exceso de calor. Así:
+$$0 + {1\over 2} I \omega_f^2 + \Delta U_\xi =  - P_\rext \Delta V + T \Delta S + Q_\rI\, .$$
+Se puede poner 
+$${1\over 2} I \omega_f^2  \approx  - \Delta G_\xi\, ,$$
+donde 
+$\Delta G_\xi = \Delta U_\xi + P_\rext \Delta V - T \Delta S$ es la variación de la función de Gibbs de la reacción química: la ganancia en energía mecánica de rotación 
+se consigue a partir de la disminución de la función de Gibbs de la reacción química. Si todo se hace bien, el proceso es reversible. Si hay pérdidas $Q_\rI < 0$, aumenta la entropía del universo y el proceso es irreversible. 
+
+Una explicación semejante se puede dar al funcionamiento de un automóvil. 
+
+\item {\it Máquina de Herón.} El {\it aelópilo} de Hero o Herón  se llenaba parcialmente de agua y se calentaba. El vapor subía por unos tubos hasta una esfera de metal que podía girar sobre un eje y que tenía tubos de salida perpendiculares al eje. Al salir el vapor, la reacción hacía girar la esfera. En la máquina de Herón, aparece energía mecánica de rotación. Relación con el helicóptero y la Tercera Ley de Newton. 
+\item {\it Balancín térmico}. En el balancín térmico aparece energía mecánica de oscilación (Opcional). La espiral bimetálica explica el movimiento de rotación. Principio de Curie. Se construye un circuito eléctrico que incluye una barra bimetálica y una bombilla que la calienta. Al aumentar su temperatura, la barra se comba, abre el contacto eléctrico y deja de circular corriente, con lo que la bombilla se apaga. Al enfriarse la barra, se regenera el contacto y vuelve a circular corriente.
+
+Relación del balancín con el segundo principio de la termodinámica: (i) si no hay una diferencia de temperaturas, el balancín no se mueve; (ii) parte de la energía absorbida por el muelle no se puede transformar en trabajo y debe cederse al exterior.  El rendimiento de una máquina térmica es siempre menor que la unidad.
+
+\item {\it Termómetro de Galileo.} Principio de Arquímedes y variación de la densidad de los líquidos con la temperatura. Relación con el Buzo de Descartes. 
+
+\item {\it Pájaro bebedor.} Uso de un aire no saturado de humedad (disminución de la función de Gibbs) para producir trabajo mecánico. Una variante es el pájaro de luz.
+
+\item {\it Radiómetro.} Tres tipos de radiómetros. Calentamiento de superficies bajo iluminación según su color. Cubo de Leslie y recipientes metálicos pintados de diferentes colores. 
+
+\item {\it Máquina de Savery simplificada.} Elevar el agua utilizando el fuego.  Fuerza del vacío. Fuerza de la presión.
+Huevo en botella. 
+
+\item {\it Máquina de Watt.} Distribuidor. Condensador. Producción de ener\-gía eléctrica.
+
+\item {\it Efecto Termoeléctrico o efecto Seebeck}. Termómetros.  Uso de las placas conductoras y no conductoras para fundir el hielo. Con un vaso de cartón sensible a las bajas temperaturas y una taza Einstein se puede poner en funcionamiento un motor eléctrico.
+
+\item {\it Máquina de Stirling.} Se coloca encima del vaso de precipitados con agua caliente.
+
+\item {\it Pila de combustión. } La luz incide sobre una placa fotovoltaica que produce electricidad que da lugar a la electrólisis del agua. El hidrógeno y el oxígeno se llevan a la pila de combustible. Se produce la reacción química en condiciones controladas y se produce electricidad (disminución de la función de Gibbs).
+
+\end{enumerate}
+
+
+\section{Ley de Newton del enfriamiento}
+
+\begin{enumerate}
+\item Calor específico. Ley de Dulong y Petit. 
+\item El problema del café y la leche.  
+\end{enumerate}
+
+
+ 
+\end{document}
+
+
+
+
+
+
+
+
+
+

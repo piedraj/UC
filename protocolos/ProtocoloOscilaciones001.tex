@@ -1,0 +1,272 @@
+\documentclass[11pt]{articulo}
+\usepackage{graphicx}
+
+\baselineskip 25pt
+\textwidth 13cm
+\textheight 20cm
+\topmargin -1.5cm
+\oddsidemargin 2cm 
+\evensidemargin 2cm 
+
+\input option_keys
+\input Definir(99) 
+ 
+\begin{document}
+
+\title{\bf Aula `Espacio Tocar la Ciencia'} 
+ \author{ {\bf J \ Güémez}\\
+{\it Aula de la Ciencia}\\ Universidad de  Cantabria\\
+}
+\maketitle
+
+\noindent
+{\huge \bf Protocolo de Experiencias de\\ Oscilaciones y Ondas}
+\vspace*{0.5cm}
+
+\large 
+
+
+\section{Equilibrios: estable, inestable, indiferente}
+
+El fenómeno de las oscilaciones siempre se produce a partir de un sistema en equilibrio estable que es perturbado, es decir, sacado de su estado de equilibrio
+proporcionándole una cierta energía, de tal manera que las fuerzas que aparecen son siempre de carácter recuperador, intentando devolver al sistema a su estado de equilibrio.  El sistema se encuentra en un mínimo de un potencial que puede aproximarse como una parábola. Cuando se le perturba se le proporciona energía, asciende en la parábola y oscila alrededor de dos puntos extremos de equilibrio. 
+Si se producen efectos de rozamiento, se disipa energía mecánica y el sistema vuelve a su posición de equilibrio estable, alcanzando el mínimo del potencial. 
+Este comportamiento se conoce como Principio del Mínimo de la Energía potencial: el sistema alcanzará el mínimo de la energía potencial compatible con las condiciones del problema. Por ejemplo, sea un muelle, de ecuación $F = - k (L-L_0)$, del que cuelga una masa $m$. Si en la situación inicial de altura $h=0$ y longitud del muelle $L=L_0$ se deja libre el sistema, se produce una oscilación. Cuando la masa desciende una altura $h$, tiene una energía potencial $V_g(h) = - m g h$, mientras que el muelle acumula energía potencial elástica como $V_L(h) = k h^2/2$. La energía potencial total es 
+$$V(h) = {1\over 2} k h^2 - m g h\, .$$
+La condición de equilibrio se obtiene imponiendo que:
+$${\d V(h)\over \d h} = 0\, ,$$
+de donde se obtiene que la longitud de equilibrio $L_\rE$ es tal que
+$$L_\rE = L_0 + {m g \over k}\, ; h_\rE = L_0 - L_\rE\, .$$
+En este equilibrio la energía potencial total es:
+$$V(L_\rE) = -{1\over 2} {m^2 g^2\over k}\, .$$
+La energía potencial inicial disminuye, al principio convertida en energía cinética, hasta parte de la energía mecánica se disipa en forma de calor. 
+En ausencia de rozamiento, el sistema oscila de forma permanente. 
+Se tiene que para un potencial de parábola cóncava hacia arriba:
+$$V(x) = +{1\over 2} {\d V(x)\over \d x}\Big|_{x=x_\rE}(x-x_\re)^2 + \cdots\, ,$$
+con la Segunda Ley de Newton expresada como:
+$$m {\d x^2\over \d t^2} = - {\d V(x)\over \d x}\, ,$$
+se tiene que:
+$$ {\d (x-x_\re)^2\over \d t^2} + \omega^2 (x-x_\re) = 0\, ; \omega^2 = m^{-1}{\d V(x)\over \d x}\Big|_{x=x_\rE}\, .$$
+La solución de esta ecuación diferencial es:
+$$(x-x_\re)(t) = A\,  \sen\, (\omega t + \phi)\, ,$$
+donde $A$ es la amplitud de la oscilación, $\omega = 2\pi/T$ es su frecuencia angular, $T$ es el período y $\phi$ la fase inicial. 
+
+
+En un equilibrio inestable el sistema se sitúa en un máximo de un potencial. Cuando el sistema se perturba, las fuerzas son tales que alejan el sistema del equilibrio.
+Se tiene que para un potencial de parábola cóncava hacia abajo:
+$$V(x) = -{1\over 2} {\d V(x)\over \d x}\Big|_{x=x_\rE}(x-x_\re)^2 + \cdots\, ,$$
+con la Segunda Ley de Newton expresada como:
+$$m {\d x^2\over \d t^2} = - {\d V(x)\over \d x}\, ,$$
+se tiene que:
+$$ {\d (x-x_\re)^2\over \d t^2} - \omega^2 (x-x_\re) = 0\, ; \omega^2 = m^{-1}{\d V(x)\over \d x}\Big|_{x=x_\rE}\, .$$
+La solución de esta ecuación diferencial es:
+$$(x-x_\re)(t) = A\,  \exp\, (\omega t + \phi)\, .$$
+El sistema se aleja del equilibrio una vez es perturbado.\\
+
+
+
+Con la ayuda de un carril de Galileo se pueden ilustrar los conceptos de equilibrio estable, bola en el mínimo, inestable,
+bola en el máximo e indiferente bola en un plano.  (Se utiliza el carril del fusil de Gauss).
+
+Cuando se da una situación en la que la suma de las fuerzas $F_k$ aplicadas sobre un cuerpo es nula $\sum_k F_k = 0$, 
+hay que recurrir a pertubar el sistema para ver si se encuentra en situación de equilibrio estable o inestable.
+
+Utilizar el Buzo de Descartes,  grande o pequeño, para ilustrar el concepto de equilibrio estable (tubos flotantes) y equilibrio inestable (tubo intermedio).
+
+\section{Péndulos}
+
+\begin{itemize}
+
+\item {\it Péndulo matemático}. Una bola de plomo colgada de un hilo de  pescar. 
+La ecuación para un péndulo matemático viene dada por
+$$\theta (t) = \theta_0\,  \sen\, (\omega t + \phi)\, .$$
+Si a tiempo $t=0$ el péndulo se encuentra en el ángulo $\theta = \theta_i$ y 
+se mueve con velocidad angular $\omega = \omega_i$, se tienen las ecuaciones:
+\beqa
+\theta_i &=& \theta_0\,  \sen\,  \phi \, ,\nonumber\\
+\omega_i &=& \theta_0 \, \omega\,  \cos\, \phi \, .\nonumber
+\eeqa
+Con estas ecuaciones se calculan $\theta_0$ y $\phi$.
+
+Calcular y medir el período de un péndulo matemático. 
+$$T = 2 \pi \sqrt{l\over g}\, .$$
+(Demostrar que la ecuación es dimensionalmente correcta)
+\item Demostrar que  dos péndulos de igual longitud pero con diferentes masas tienen  (aproximadamente) el mismo período.
+
+\item {\it Péndulo físico.} (Conectado a un ordenador). Calcular y medir el período de un péndulo físico:
+$$T = 2 \pi \sqrt{m L^2/3 \over m (L/2) g}= 2 \pi \sqrt{ 2 L   \over 3 g}\, .$$
+(Demostrar que es dimensionalmente correcta). Tiene un período menor que el de un péndulo matemático de la misma longitud.
+
+Péndulo PASCO --barra más dos pesas-- conectado a un ordenador:
+con las dos masas colocadas al extremo de la barra de 34~cm, se comporta como un péndulo matemático, de período 1,2~s.  Debe haber 12~s en 10 períodos medidos en la pantalla. Con únicamente la barra, se comporta como péndulo físico, con período de 1~s aproximadamente. 
+Debe haber 10~s para 10 períodos.
+
+
+\item {\it El tentetieso como un péndulo físico}. 
+
+Se comienza describiendo un tentetieso tipo payaso, en el que se vea bien que la estabilidad se consigue haciendo que el
+centro de gravedad se sitúe por debajo del punto de apoyo. Se compara entonces este tentetieso y esta condición de equilibrio estable 
+con el tentetieso de bola, en el que el centro de masas siempre se encuentra por encima del punto de apoyo, lo que contradice la condición
+anterior. Lo que se observa es que la condición de equilibrio estable en tentetiesos es que siempre que  el equilibrio se perturbe el centro de gravedad
+ascienda, con lo que tienda a descender. Si en el proceso el centro de gravedad desciende, entonces seguirá descendiendo y el equilibrio ya no será estable. 
+
+\begin{itemize}
+\item Estudiar los dos períodos del tentetieso águila. Para la primera oscilación, la distancia al eje de giro es de unos $l_1=6,5$~cm. La distancia entre el punto de apoyo y el centro de gravedad se estima en $d=1$~cm. Para la oscilación más rápida, la distancia al eje se estima en unos $l_2=2,5$~cm.
+
+Con estos datos
+$$T_1 = 2 \pi \left({ml_1^2\over m g d}\right)^{1/2}\approx 1,2~{\rm s}\, .$$
+Para 10 períodos se esperan unos 12~s.
+Para la oscilación rápida, 
+$$T_2 = 2 \pi \left({ml_2^2\over m g d} \right)^{1/2} \approx 0,5~{\rm s}\, .$$
+
+\end{itemize}
+\item {\it Péndulo de gravedad variable} (Conectado a un ordenador).  Cálcular y medir el período de un péndulo de gravedad variable:
+$$T (\alpha) = 2 \pi \sqrt{l\over g (\alpha)}\, ;  g(\alpha) = g \, {\rm cos}\,  \alpha$$
+Cuando $\alpha = 1,31$ rad (75 $^\circ$), $\cos \, \alpha = 0,25$ y el período debe ser el doble de cuando el péndulo se encuentra en vertical.
+
+\item {\it Péndulo de torsión.} Para un péndulo de torsión --un muelle unido a una plataforma--, el ángulo es proporcional al torque aplicado.  
+$$T = 2 \pi \sqrt{I\over k_\rT}; \theta = k_\rT \tau\, .$$
+
+\item {\it Tubo oscilante en fluido.} Tubo lastrado con plomos que oscila en cubeta con agua. Oscilaciones amortiguadas.
+$$T = 2 \pi \sqrt{m \over A \rho g}\, ,$$
+donde $A$ es la sección del tubo, $\rho$ es la densidad del líquido y $m$ la masa del conjunto tubo más plomos.
+(Probar que la ecuación es dimensionalmente correcta).
+
+Puesto que el peso del tubo debe ser igual al peso del agua desalojada, $m g = h_\rs A \rho g$, donde $h_\rs$ es la longitud de tubo sumergido. Sustituyendo se obtiene que:
+$$T = 2 \pi \sqrt{h_\rs \over  g}\, ,$$
+que vuelve a tener la forma del período para un péndulo matemático.
+
+\item Péndulos resonantes. 
+
+\begin{itemize}
+\item {\it Péndulos resonantes débilmente acoplados.} Tres péndulos matemáticos cuelgan de la misma barra. Dos tienen la misma longitud y el tercero no. Cuando oscila 
+uno de los del par, ambos terminan por oscilar.
+
+\item {\it Péndulo de Wilbeforce.} Péndulo de muelle y péndulo de torsión. Acoplamiento entre los modos de oscilación y los modos de torsión.
+\end{itemize}
+
+\end{itemize}
+
+\section{Ley de Hooke}
+
+\begin{itemize}
+\item {\it Péndulo de resorte}. Con muelles verticales. Se mide la constante elástica de un muelle con la ayuda de un dinamómetro (de $F=2$~N) y de una regla (de $L=1$~m). Se mide la longitud del muelle en ausencia de fuerzas y con la ayuda del dinamómetro y la regla se obtienen fuerza y elongación y de ahí la constante $k$ del muelle. Esta constante se utiliza luego en diferentes experimentos.  
+
+Si se coloca un peso $mg$, y se hace oscilar, el período de oscilación viene dado por
+$$T = 2 \pi \sqrt{m\over k}\, .$$
+(Demostrar que esta ecuación es dimensionalmente correcta).
+
+El fabricante de los muelles proporciona los valores de $k_\rR= 10$~N~m$^{-1}$
+para el muelle rojo, $k_\rA= 20$~N~m$^{-1}$ para el muelle azul, $k_\rV= 40$~N~m$^{-1}$
+para el muelle rojo.  Puesto que el soporte tiene $h=0,5$~m de altura, se debe utilizar el verde. Con los datos proporcionados, con una peso de $m=1$~kg el período de oscilación es de $T=1$~s. Se esperan 10~s para la medida de 10 períodos.
+
+\item Dos muelles horizontales en carril sin rozamiento.  El período de oscilación del carrito, masa 500 g,  es de
+$$T = 2 \pi \sqrt{m\over 2k}\, .$$ 
+La constante del muelle se estima considerando una longitud en reposo de $l_0 = 5,5$~cm, y que se estira hasta los $l=34,5$~cm bajo la acción de una fuerza de 2~N, medida con el dinamómetro de 2~N. Se tiene entonces una $k \approx 7$~N~m$^{-1}$. Con este dato, para un carrito de $m=500$~g se espera un período de oscilación de $T=1,2$~s y un tiempo de unos 6~s para 5 oscilaciones.
+
+
+\item {\it Resonancia.}  Si el carrito con los dos muelles se fuerza con una fuerza sinusoidal, si la frecuencia de la fuerza es la del carrito, entonces entra en resonancia. Se puede amortiguar con un imán de neodimio, utilizando la Ley de Lenz. 
+
+\end{itemize}
+
+
+\section{Ondas estacionarias transversales}
+
+La cuerda [longitud $L=3$~m, peso, $F=1,3$~N] tiene una densidad de $\rho_\rL = 5\ttimes 10^{-3}$~kg~m$^{-1}$, y se le aplica una fuerza de $F=2$~N (Esta fuerza puede cambiar). La velocidad de propagación de las ondas es entonces:
+$$v = \left({F\over \rho_\rL}\right)^{1/2} \approx 20~{\rm m\,  s^{-1}}\, .$$
+Demostrar que la ecuación es dimensionalmente correcta.
+Para una distancia $L=1,2$~m, la frecuencia del primer armónico se espera que se encuentre en
+$$\nu_1 = {v \over 2 L} \approx 8~{\rm Hz}\, .$$
+Los siguientes armónicos se encuentran a múltiplos de esta frecuencia.
+
+Se utiliza luz estroboscópica.  Se puede utilizar el disco de Newton en movimiento para ver el efecto de la luz estroboscópica.
+
+
+
+\section{Ondas estacionarias longitudinales}
+
+
+
+\subsection{Ondas en muelles}
+
+La velocidad de propagación de las ondas longitudinales en un muelle es:
+$$v=\left({B\over \rho_\rL}\right)^{1/2}\, .$$
+El coeficiciente $B$ es
+$$B = L \left({\partial F\over \partial L}\right)_T\, ,$$
+o variación relativa de la longitud del muelle bajo tensión (inverso). Tanto la densidad lineal como $B$ se deben medir para el muelle extendido
+(se pesa el muelle y se divide por la longitud estirado; se estira unos 10~cm y se mide la fuerza necesaria).
+(Mostrar que la ecuación es dimensionalmente correcta).
+
+%Para una longitud de 1~m, 
+
+La longitud del muelle es la mitad de la longitud de onda del primer armónico. $L=\lambda/2$. Con $v = \nu \lambda$, 
+
+$$\nu = {v\over 2L}\, .$$
+
+Para el muelle, se tiene una frecuencia del primer armónico de 3~Hz.  A 6~Hz se ve bastante bien el primer nodo central y a 9~Hz se ve bastante bien los dos nodos intermedios.
+
+\subsection{Ondas sonoras}
+
+La velocidad de propagación del sonido:
+$$v_\rS=\left({K\over \rho}\right)^{1/2}\, ,$$
+donde
+$$K = V \left({\partial P\over \partial V}\right)_S\, ,$$
+En condiciones adiabáticas para un gas ideal $PV^\gamma = {\rm C}^{te}$ con $\gamma = 1,4$.
+$$v_\rS=\left({\gamma P\over \rho}\right)^{1/2} \, .$$
+Densidad del aire $\rho = 1$~kg~m$^{-3}$, $P = 10^5$~Pa, 
+$$v=\left({\gamma P\over \rho}\right)^{1/2} \approx 340~{\rm m s^{-1}}\, .$$
+
+Si en la laringe, longitud de unos $L=15$~cm, se forma una onda estacionaria de longitud de onda $\lambda \approx 4L$, entonces la frecuencia es
+$$\nu \approx {340\over 0,6} \approx 600~{\rm Hz}\, .$$
+La voz humana anda entre los 80 y los 1100~Hz.
+
+Experimento con Helio. Cuando se toma algo de helio, es decir, cuando el aire de la garganta se sustituye por helio,
+la cavidad resonante, la laringe, sigue teniendo la misma longitud, por lo que la longitud de onda de las ondas estacionarias que se forman 
+en dicha cavidad es la misma que con el aire, modificándose la velocidad de propagación de la onda, pues cambia la densidad y cambia $\gamma$,
+y, por tanto, su frecuencia. Para el aire, con $M \approx 30$~g mol$^{-1}$, y para el helio, con $M ({\rm He}) \approx 4$~g mol$^{-1}$,
+la razón de sus densidades es de $1/8$, por lo que la relación de las velocidades de propagación es unas 3 veces mayor en el helio que en el aire.
+Puesto que ahora $\lambda \nu ({\rm He}) \approx 3 v_\rs$, la frecuencia $\nu ({\rm He}) \approx 3 \nu$, y el sonido emitido será más agudo
+que con aire.
+
+Resonancia en diapasones. Resonancia acústica. 
+
+{\it Barra cantante}. Si se utiliza una barra de aluminio, de longitud $L\approx 50$~cm,  para producir ondas sonoras estacionarias, se tiene que si se toma por el medio con un dedo,
+la longitud de onda de la onda estacionaria es $\lambda = 2L$. El sonido se transmite en el aluminio con una velocidad de $v_\rs \approx 5100$~m s$^{-1}$, por lo que se obtienen frecuencias de:
+$$\nu \approx 5000~{\rm Hz}\, .$$
+
+\section{Cubeta de ondas}
+
+Producción de ondas.  Mediante una lámina oscilante se producen las perturbaciones en la superficie del agua. 
+
+Propagación de ondas. Las ondas se propagan como ondas transversales bidimensionales. 
+
+Fenómenos de interferencia. Se producen dos perturbaciones de la misma frecuencia en la superficie del agua. Aquellos puntos a los que llegan dos ondas en fase
+positiva tienen más altura de agua y una curvatura negativa. Al llegar la luz procedente de arriba, se concentra y el punto se observa como brillante. 
+Aquellos puntos a los que llegan dos ondas en fase negativa
+tienen menos altura de agua y una curvatura positiva. Al llegar la luz procedente de arriba, se dispersa y el punto se observa como oscuro. Aquellos puntos a los que llegan dos ondas en anti-fase
+tienen la misma altura de agua y son planas. Al llegar la luz procedente de arriba, no se concentra y el punto se observa como intermedio.
+
+
+
+\section{Ondas luminosas}
+
+Interferencias. Se pueden producir haciendo incidir un rayo láser sobre un espejo, lanzando gotitas de alcohol para visualizar la trayectoria del rayo
+y viendo que las gotitas depositadas sobre el espejo producen fenómenos de interferencia. 
+ 
+ Interferencias. 
+ 
+ Una rendija. Cuando un rayo de luz atraviesa una rendija, se produce un patrón de interferencias. Justo detrás de la rendija hay un punto de luz, pero a sus lados hay oscuridad, seguida de puntos más débiles de luz, oscuridad, etc. 
+ 
+ Doble rendija. Cuando un rayo de luz atraviesa una doble rendija, en la mancha luminosa que se observaba en el caso de la rendija simple, se observan eb su interior sonas de luz y oscuridad. Lo mismo sucede en los restantes puntos de luz anteriores.
+ 
+\end{document}
+
+
+
+
+
+
+
+
+
+
