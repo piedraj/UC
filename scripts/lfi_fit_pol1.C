@@ -8,8 +8,8 @@ void lfi_fit_pol1()
 {
   const Int_t n = 6;
 
-  Double_t vx[n] = {6.235, 8.105, 9.97, 11.815, 13.6574, 15.4921};
-  Double_t vy[n] = {log(343.3), log(229), log(147.2), log(89.8), log(50.2), log(24.3)};
+  Double_t vx[n] = {7.040, 9.075, 11.115, 13.165, 15.225, 17.285};
+  Double_t vy[n] = {log(220), log(181), log(142), log(107), log(72), log(38)};
   Double_t ex[n] = {0.003, 0.003, 0.003, 0.003, 0.003, 0.003};
   Double_t ey[n] = {log(0.3), log(0.3), log(0.3), log(0.3), log(0.3), log(0.3)};
 
