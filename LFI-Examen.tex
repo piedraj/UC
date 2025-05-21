@@ -1,0 +1,73 @@
+\documentclass[12pt]{articulo}
+\usepackage{graphicx}
+
+\baselineskip 25pt
+\textwidth 15cm
+\textheight 23cm
+\topmargin -1.5cm
+\oddsidemargin 1cm
+\evensidemargin 1cm
+
+\date{\vspace{-5ex}}
+
+\begin{document}
+
+\title{\bf EXAMEN Laboratorio de F\'isica I\\27 de mayo de 2025} 
+
+\author{}
+
+\maketitle
+
+Se dispone de un generador de aire y un perfil de ala de avi\'on. La velocidad
+del aire $v$ se puede obtener a partir de la medida de la diferencia de
+presiones total y est\'atica $\Delta P$,
+%
+\begin{eqnarray*}
+v = \sqrt{\frac{2\Delta P}{\rho}},
+\end{eqnarray*}
+%
+siendo $\rho = 1,2~{\rm kg/m^3}$ la densidad del aire. Esta diferencia $\Delta P$
+se mide usando un tubo de Pitot y un man\'ometro de tubo inclinado, con una
+precisi\'on de $\delta P = 1,4~{\rm Pa}$. La fuerza\footnote{Usar en todo el
+ejercicio $g = 9,81~{\rm m/s^2}$ como valor de la aceleraci\'on de la gravedad.}
+de elevaci\'on $F_e$ se obtiene a partir de la medida de la masa mediante una balanza
+tarada con el perfil de ala, con una precisi\'on de $\delta m = 10^{-3}~{\rm kg}$.
+Para un \'angulo de ataque $\alpha = 30^{\circ}$ los valores medidos son
+%
+\begin{eqnarray*}
+\Delta P = 60 \pm 1,4~{\rm Pa},\\
+m = -0,062 \pm 0,001~{\rm kg}.
+\end{eqnarray*}
+
+Con el tubo de Pitot y para el mismo \'angulo de ataque, se miden
+(Tabla~\ref{tab:presiones}) diferencias entre la presi\'on atmosf\'erica
+$P_{atm}$ y la presi\'on en los diferentes orificios de las superficies superior
+e inferior del perfil de ala de avi\'on, $P_{ala}$.
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{cc|cc}
+\hline
+orificios superiores & $P_{atm} - P_{ala}~/{\rm Pa}$ & orificios inferiores & $P_{atm} - P_{ala}~/{\rm Pa}$\\
+\hline
+1 & 44 & 1 & $-53$\\
+2 & 32 & 2 & $-37$\\
+3 & 19 & 3 & $-16$\\
+4 &  7 & 4 &  $-4$\\
+\hline
+\end{tabular}
+\end{center}
+\caption{Diferencias de presi\'on medidas en los orificios del perfil de ala de avi\'on.}
+\label{tab:presiones}
+\end{table}
+
+\begin{enumerate}
+\item{Obtener la fuerza de elevaci\'on $F_e$ ejercida sobre el ala a partir de la
+  medida de la masa. Calcular el correspondiente coeficiente de elevaci\'on
+  $C_e = 2F_e / (\rho v^2 S)$ con su error, tomando $S = 0,016~{\rm m^2}$ como
+  superficie del ala.}
+\item{Estimar la fuerza de elevaci\'on $F_p$ a partir de las diferencias de
+  presi\'on de la Tabla~\ref{tab:presiones}. Comparar con la fuerza de
+  elevaci\'on obtenida a partir de la masa.}
+\end{enumerate}
+
+\end{document}
